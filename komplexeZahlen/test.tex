@@ -1,0 +1,168 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhead[L]{Aufgaben zur Logik}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\newcommand\x{1}
+\newcounter{y}
+\setcounter {y} {1}
+
+\parindent 0mm
+
+\textbf{Komplexe Zahlen}
+
+%\href{run:/Users/khthe/Documents/InformatikKurse/MathePlus/komplexeZahlen/test.html}{test}
+%\url{file:///C:/Users/khthe/Documents/InformatikKurse/MathePlus/komplexeZahlen/test.html}
+
+%\url{file:test.html}
+\href{file:test.html}{link}
+
+\bigskip
+
+\textbf{A\arabic {y}:} Bringe die folgenden Ausdrücke in die Form $a + b i$ mit $a,b \in \mathbb{R}$ \\
+a. $(2+3 i)-(1- i)$  \quad    b. $(5-3 i) \cdot (4- i)$  \quad c. $(8+6 i)^2$  \quad
+d. $\frac{1}{i}$ \quad  e. $\frac{8+5 i}{2 - i}$  \\
+f. $\frac{1}{i} + \frac{3}{1+i}$   \quad
+g. $\frac{\sqrt{2}}{\sqrt{2}- i}$ \quad h. $(1+i)^{10}$ \quad i. $(\frac{1+i}{1-i})^{201}$
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Gegeben seien die komplexen Zahlen $z = 3 - 2i, w = \frac{10}{1+2i}$. Berechne und
+gib das Ergebnis in der Form $a + ib$ an. \\
+a. $z-w$  \quad b. $\frac{z}{w}$ \quad c. $\overline{w}$ \quad d. $\left| z \right|$ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Gegeben seien die komplexen Zahlen $z = 7 - 3i, w = \frac{1}{1+i}$. Berechne und
+gib das Ergebnis in der Form $a + ib$ an. \\
+a. $z+w$  \quad b. $z \cdot w$ \quad c. $\overline{w}$ \quad d. $\left| z \right|$ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Stelle $M$ zeichnerisch in der gaußschen Zahlenebene dar. \\
+ $\{z \in \mathbb{C} \mid  \text{Re}(z) \ge 2 \land \text{Im}(z) < 1\}$ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Bestimme $\text{Re}(w)$ und $\text{Im}(w)$ für $w = \frac{1}{z^2} ( z \in \mathbb{C} 
+\setminus \{0\})$. 
+\bigskip \stepcounter{y}
+
+%\textbf{A\arabic {y}:} Untersuche auf Injektivität, Surjektivität, Bijektivität.
+%
+%a. $r: \mathbb{C} \rightarrow \mathbb{R}, z \mapsto \text{Re}(z)$ \\
+%b. $e: \mathbb{R} \rightarrow \mathbb{C}, a \mapsto a + a i$ \\
+%c. $k: \mathbb{C} \setminus \{0\} \rightarrow \mathbb{C} \setminus \{0\} , z \mapsto \frac{1}{z}$ \\
+%d. $g: \mathbb{C} \rightarrow \mathbb{C}, z \mapsto z + i$ \\
+%e. $m: \mathbb{C} \rightarrow \mathbb{C}, z \mapsto z \cdot ( 1 + i)$ 
+%\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Untersuche auf Injektivität, Surjektivität, Bijektivität. \\
+a. $r: \mathbb{C} \rightarrow \mathbb{C}, z \mapsto \overline{z}$ \\
+b. $f: \mathbb{C} \rightarrow \mathbb{C}, z \mapsto \left| z \right| $ \\
+c. $g: \mathbb{C} \rightarrow \mathbb{R}_{0}^{+}, z \mapsto \left| z \right| $ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Beweise: Für alle $z,w \in \mathbb{C} \, (z = a + b i \text{\,mit\,} a, b \in \mathbb{R})$ 
+gilt: 
+
+a. $\overline{z + w} = \overline{z} + \overline{w}$ \\
+b. $\text{Re}(z) = \frac{1}{2}(z + \overline{z})$ und $\text{Im}(z) = \frac{1}{2i}(z - \overline{z})$ \\
+c. $z \cdot \overline{z} = a^2 + b^2$, d.h. $z \cdot \overline{z}$ ist reell und nicht negativ.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Berechne:
+$50 \cdot \text{Im}(\overline{(2-4i)^{-1}}) + \text{Re}(\left|6 + 8i \right|)$.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Beweise das sogenannte Parallelogrammgesetz und interpretiere es geometrisch: \\
+$\left| z + w \right|^2 + \left| z - w \right|^2= 2 \left|z \right|^2 + 2 \left| w \right| ^2$.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Stelle folgende Punktmengen zeichnerisch in der gaußschen Zahlenebene dar und
+begründe deine Zeichnung.
+
+a. $M_1 =  \{z \in \mathbb{C} \mid  \left|z\right| = 1\}$  bzw.
+  $M_1^{'} =  \{z \in \mathbb{C} \mid  \left|z\right| \le 1\}$ \\
+b. $M_2 =  \{z \in \mathbb{C} \mid  \left|z - i\right| = 1\}$ \\
+c. $M_3 =  \{z \in \mathbb{C} \mid  \frac{1}{2} \le \left|z - i\right| < 1\}$ \\
+d. $M_4 =  \{z \in \mathbb{C} \mid  \left| z-1 \right|  = \left|z +1\right|\}$ \\
+e. $M_5 =  \{z \in \mathbb{C} \mid  \left| z^2 \right| - 2(z + \overline{z})= 0\}$ 
+\bigskip \stepcounter{y}
+
+
+\textbf{A\arabic {y}:} Skizziere die folgenden Mengen komplexer Zahlen in der gaußschen Zahlenebene
+
+a. $\{z \in \mathbb{C} \mid  \left|z\right| = 2\}$ \\
+b.  $\{z \in \mathbb{C} \mid 1 \le \left|z\right| \le  5\}$ \\
+c.  $\{z \in \mathbb{C} \mid  \text{Re}(z) = 3 \}$ 
+\bigskip \stepcounter{y}
+ 
+\textbf{A\arabic {y}:} Berechne und schreibe das Ergebnis auch in der Form $a + ib$.
+
+a. $\sqrt{-4}$  \quad  b. $\sqrt{-a} \, (a \in \mathbb{R})$ \quad c. $\sqrt{16 e^{3\pi i}}$  
+\quad d. $\sqrt{5 + 12 i}$ \quad e. $\sqrt{3 - 4 i}$.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Belege durch ein Zahlenbeispiel, dass im Allgemeinen 
+
+$\sqrt{z \cdot w }  \neq \sqrt{z} \cdot \sqrt{w} $ und $\sqrt{\frac{z}{w}} \neq \frac{\sqrt{z}}{\sqrt{w}}$
+
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Zeige, dass gilt: \\
+a. $\sqrt{z}$ ist genau dann reell (und nicht negativ), wenn $z \in \mathbb{R}_{0}^{+}$ ist. \\
+b. $\sqrt{z}$ ist genau dann rein imaginär, wenn $z \in \mathbb{R}^{-}$ ist. 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Löse die folgenden quadratischen Gleichungen über $\mathbb{C}$. \\
+a. $z^2 - 4z + 5 = 0$ \quad b. $5z^2 - (5 + 10i)z - 5 + 5i = 0$
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Gib eine quadratische Gleichung mit der Lösungsmenge $L = \{1-i, 4+3i\}$ an. 
+Kontrolliere dein Ergebnis.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Gib die fünften Einheitswurzeln an und zeichne sie.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Finde alle Lösungen von $z^6 = -32 + 32\sqrt{3}i$ und zeichne sie.
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Stelle die folgenden komplexen Zahlen in Polarkoordinaten dar: \\
+a. $z = \frac{5}{1-i}$ \quad b.$w = (1-\sqrt{3} i)^3$
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} Stelle die folgenden komplexen Zahlen in Polarkoordinaten dar: \\
+a. $z = \frac{2}{1+i}$ \quad b.$w = (1+\sqrt{5} i)^2$
+\bigskip \stepcounter{y}
+\end{document}

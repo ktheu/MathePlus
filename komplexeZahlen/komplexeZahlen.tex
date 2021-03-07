@@ -1,0 +1,83 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Aufgaben zu komplexen Zahlen}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\newcommand\x{1}
+\newcounter{y}
+\setcounter {y} {1}
+
+\parindent 0mm
+
+\bigskip
+
+\textbf{A\arabic {y}:} (Kehrwerte und Quotienten komplexer Zahlen bilden) \\
+Berechne $\frac{1}{z}$ bzw. $\frac{w}{z}$ für: \\
+a. $z = 4 i$  \quad    b. $z = 3 - i$  \quad c. $z = 6\cos(\frac{\pi}{6}) + 6 i \sin(\frac{\pi}{6}) $  \\
+d. $z = -8 i, \, w = 3 + 16i$ \quad e. $z=i+3, w=6i$ \quad f. $z = 2\cos(\pi) + 2 i \sin(\pi), \, w = 8- 5i$
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} (Kartesische und polare Darstellung komplexer Zahlen) \\
+Gib die folgenden komplexen Zahlen in kartesischer Darstellung sowie in Polarform an.\\
+a. $z = 3$  \quad    b. $w = 3 + 4i$  \quad c. $z = \frac{1}{2 + i} $  \\
+d. $w = \overline{-3+i}+6-2i$ \quad e. $z = 4\cos(\pi) + 4i \sin(\pi) $ \quad f. $w = 5 \cos(\frac{2\pi}{3}) +
+5i \sin(\frac{2\pi}{3})$ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} (Polardarstellung komplexer Zahlen) \\
+Gib die folgenden komplexen Zahlen in Polardarstellung an und berechne jeweils Real und Imaginärteil. \\
+a. $1 + i \quad$     b. $8 \cos(\frac{\pi}{6}) + 8 i \sin(\frac{\pi}{6}) \quad$  c. $ -\sqrt{3} + 3 i $  \\
+d. $ (1 + 2i) \cdot (3 - i) \quad$   e. $ i \cdot \overline{3 - 4 i} \quad$ f. $(1 + i)^{20}$ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} (Wurzeln komplexer Zahlen)  
+Berechne jeweils alle $z \in \mathbb{C}$ mit:\\
+a. $z^2 = ( 3- 3i)^2 \quad$     b. $z^3 = \frac{64}{i} \quad $  c. $ z^4 = 16i^2 $ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} (Bereiche komplexer Zahlen)  
+Zeichne die Mengen komplexer Zahlen (oder einen Ausschnitt davon):\\
+a. $\{z \in \mathbb{C} : z = 8i\overline{z} \} \quad $ 
+b. $\{z \in \mathbb{C} : -e < 2z+2\overline{z} < e \} \quad $ 
+c. $\{z \in \mathbb{C} :  z^4 = 81 i^2 \}  $ 
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:} (Bereiche komplexer Zahlen)  
+Zeichne die Mengen komplexer Zahlen (oder einen Ausschnitt davon):\\
+a. $\{z \in \mathbb{C} : z \overline{z} - 9 \le 0 \} \quad $ 
+b. $\{z \in \mathbb{C} : \left| \frac{z+4}{z-4}  \right| \ge 1 \} \quad $ 
+c. $\{z \in \mathbb{C} :  (z-i)(\overline{z}+i) < 4\}  $ 
+\bigskip \stepcounter{y}
+\end{document}

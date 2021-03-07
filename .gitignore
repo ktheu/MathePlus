@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+*.code-workspace
+*.aux
+*.log
+*.gz
+untitled*.*
+hide*
+klausuren
+ 
+
+ 
+zahlentheorie/quiz.ipynb
