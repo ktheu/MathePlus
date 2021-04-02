@@ -77,22 +77,6 @@ Die erhaltene Datei enthält nicht nur die verschlüsselte Nachricht, sondern au
 Wenn der Empfänger auf diese Sicherheit verzichten kann, kann er die Entschlüsselung auch ohne den öffentlichen Schlüssel des Senders durchführen. 
 Es kommt dann eine Warnung, aber die Entschlüsselung funktioniert trotzdem.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 
