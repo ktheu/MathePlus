@@ -94,18 +94,9 @@ Wenn wir in der Kleopatra-Übersicht auf unsere Benutzerkennung klicken und dann
  <img src='bild19.png' width="400">
 
 
-
-
-
- ### Mein öffentlicher Schlüssel
-
- Der öffentliche Schlüssel für die email-Adresse khtheuer@stiftsgymnasium.de ist 
+ Der öffentliche Schlüssel für die email-Adresse khtheuer@stiftsgymnasium.de zum Download ist 
  [hier](./Karlheinz-Theuer-0xFE3EA1A0-public.asc)
  
- 
-
-
-
  -----
 
  Für MacOS kann die [GPGSuite](https://gpgtools.org/) verwendet werden.
