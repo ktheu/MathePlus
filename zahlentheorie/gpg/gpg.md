@@ -9,10 +9,16 @@ Integration in den Explorer, nur das Basisprogramm (GnuPG) und die Benutzeroberf
 
 ---
 
-Nach der Installation Kleopatra starten. Auf der Willkommen-Seite *Neues Schlüsselpaar* anklicken.
-Den Namen eintragen und *Passphrase* (= Passwort) ankreuzen.  Nach der Schlüsselgenerierung auf *Abschließen*  klicken. 
+Nach der Installation Kleopatra starten. Auf der Willkommenseite *Neues Schlüsselpaar* wählen, dann
+Name und Email eintragen, *Passphrase* (= Passwort) ankreuzen und auf *erstellen* klicken.
 
-<img src='bild4.png' width="500">
+<img src='bild14.png' width="500">
+
+Die Passphrase dient zur Sicherung des Schlüssels auf dem lokalen PC und spielt für die eigentliche Verschlüsselung
+der Nachrichten keine Rolle. Sie soll verhindern, dass Unbefugte, die Zugang zum PC (und damit über Gpg4Win zum privaten Schlüssel) erhalten, Nachrichten entschlüsseln können.
+
+Nach der Schlüsselgenerierung auf *Abschließen*  klicken. 
+
 
 ---
 
@@ -20,25 +26,26 @@ Den Namen eintragen und *Passphrase* (= Passwort) ankreuzen.  Nach der Schlüsse
 
 Den Schlüssel anklicken und *exportieren* wählen.
 
-<img src='bild5.png' width="700">
+<img src='bild15.png' width="700">
 
 
-Die erzeugte Datei enthält den öffentlichen Schlüssel, das Wort *public* kommt im Dateinamen vor, z.B: *name_0x7B8614FF_public.asc*. Diese Datei mit normalem email an die Kommunikationspartner verschicken.
+Die erzeugte Datei enthält den öffentlichen Schlüssel, das Wort *public* kommt im Dateinamen vor, z.B: *name_0xFE3EA1A0_public.asc*. Diese Datei mit normalem email als Dateianhang an die Kommunikationspartner verschicken (bleibt manchmal leider im Spam-Filter hängen) oder an geeigneter Stelle zum Download zur Verfügung stellen (z.B. in einem Teams-Raum).
+
 
 ----
 
+
+
 ### Import des öffentlichen Schlüssel des Kommunikationspartners
 
-Wir erhalten von Malte eine email, in der er uns seinen öffentlichen Schlüssel in Form eines Dateianhangs zuschickt: *malte_0x473277BD_public.asc*. Wir klicken auf importieren und wählen die erhaltene Datei.
+Wir erhalten von Malte eine email, in der er uns seinen öffentlichen Schlüssel in Form eines Dateianhangs zuschickt: *Malte Riedberg_0x00D0788A_public.asc*. Wir klicken auf importieren und wählen die erhaltene Datei.
 
-<img src='bild6.png' width="700">
+<img src='bild16.png' width="700">
 
 
 ----
 
  Wir können zunächst nicht sicher sein, dass diese email wirklich von Malte stammt oder vielleicht unterwegs verändert wurde. Deswegen erscheint der Hinweis, dass der öffentliche Schlüssel, den wir erhalten haben, beglaubigt werden muss (seine Authentizität muss sicher gestellt sein). Wir machen das in einem späteren Schritt und klicken hier auf *nein*. Der Schlüssel von Malte erscheint in der Übersicht als *nicht beglaubigt*.
- 
-<img src='bild7.png' width="500">
 
 
 ----
@@ -49,9 +56,9 @@ Wir erhalten von Malte eine email, in der er uns seinen öffentlichen Schlüssel
  Wir selektieren den Schlüssel von Malte, dann rechter Mausklick und *Details* wählen:
 
  Malte liest die ersten 8 und die letzten 8 Zeichen des Fingerprints seines öffentlichen Schlüssels vor. Wenn diese Zeichen mit denen übereinstimmen, die wir beim Fingerprint sehen, können wir sicher sein, dass der öffentliche Schlüssel von Malte während des email-Transports nicht verändert wurde.
-und klicken auf *Beglaubigen*.
+und klicken auf *Beglaubigen* (wir benötigen dazu unsere Passphrase).
 
- <img src='bild10.png' width="600">
+ <img src='bild17.png' width="600">
 
  ----
 
@@ -63,7 +70,7 @@ und klicken auf *Beglaubigen*.
  Wenn wir *Für mich verschlüsseln* selektiert lassen, können außer Malte auch wir die Nachricht wieder entschlüsseln. Ganz unten steht der Name der Ausgabedatei vom Typ *gpg*. 
  Wir klicken auf *Signieren/Verschlüsseln*. 
 
- <img src='bild12.png' width="801">
+ <img src='bild18.png' width="401">
 
  Die verschlüsselte Datei können wir jetzt als Anhang mit einem normalen email verschicken. 
 
@@ -79,6 +86,27 @@ Es kommt dann eine Warnung, aber die Entschlüsselung funktioniert trotzdem.
 
 ---
 
+
+### Öffentlichen Schlüssel ansehen
+
+Wenn wir in der Kleopatra-Übersicht auf unsere Benutzerkennung klicken und dann Exportieren wählen, sehen wir den öffentlichen Schlüssel.
+
+ <img src='bild19.png' width="400">
+
+
+
+
+
+ ### Mein öffentlicher Schlüssel
+
+ Der öffentliche Schlüssel für die email-Adresse khtheuer@stiftsgymnasium.de ist 
+ [hier](./Karlheinz-Theuer-0xFE3EA1A0-public.asc)
+ 
+ 
+
+
+
+ -----
 
  Für MacOS kann die [GPGSuite](https://gpgtools.org/) verwendet werden.
 
