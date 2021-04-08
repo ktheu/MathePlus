@@ -62,23 +62,23 @@ und klicken auf *Beglaubigen* (wir benötigen dazu unsere Passphrase).
 
  ----
 
- ### Eine verschlüsselte email an den Kommunikationspartner schicken 
+### Eine verschlüsselte email an den Kommunikationspartner schicken 
 
- Da wir bei der Installation keine Integration mit z.B Outlook gewählt haben, können wir  verschlüsselte Dateien nur als Anhang verschicken. Wir können den zu verschlüsselnden Text also nicht direkt in Outlook eingeben, sondern schreiben ihn in ein Word-Dokument oder eine einfache Textdatei. 
+Da wir bei der Installation keine Integration mit z.B Outlook gewählt haben, können wir  verschlüsselte Dateien nur als Anhang verschicken. Wir können den zu verschlüsselnden Text also nicht direkt in Outlook eingeben, sondern schreiben ihn in ein Word-Dokument oder eine einfache Textdatei. 
 
- Wir wählen Maltes Schlüssel, klicken auf *Signieren/Verschlüsseln* und wählen die Datei aus, die wir verschlüsseln wollen. In dem dann erscheinenden Fenster *Dateien signieren/verschlüsseln* wählen wir *Für andere verschlüsseln* und selektieren dort Maltes öffentlichen Schlüssel. 
- Wenn wir *Für mich verschlüsseln* selektiert lassen, können außer Malte auch wir die Nachricht wieder entschlüsseln. Ganz unten steht der Name der Ausgabedatei vom Typ *gpg*. 
- Wir klicken auf *Signieren/Verschlüsseln*. 
+Wir wählen Maltes Schlüssel, klicken auf *Signieren/Verschlüsseln* und wählen die Datei aus, die wir verschlüsseln wollen. In dem dann erscheinenden Fenster *Dateien signieren/verschlüsseln* wählen wir *Für andere verschlüsseln* und selektieren dort Maltes öffentlichen Schlüssel. 
+Wenn wir *Für mich verschlüsseln* selektiert lassen, können außer Malte auch wir die Nachricht wieder entschlüsseln. Ganz unten steht der Name der Ausgabedatei vom Typ *gpg*. 
+Wir klicken auf *Signieren/Verschlüsseln*. 
 
- <img src='bild18.png' width="401">
+<img src='bild18.png' width="401">
 
- Die verschlüsselte Datei können wir jetzt als Anhang mit einem normalen email verschicken. 
+Die verschlüsselte Datei können wir jetzt als Anhang mit einem normalen email verschicken. 
 
  ---
 
- ### Eine erhaltene Datei entschlüsseln
+### Eine erhaltene Datei entschlüsseln
 
- Wir klicken auf  *Entschlüsseln/Überprüfen* und wählen die zu entschlüsselnde gpg-Datei.
+Wir klicken auf  *Entschlüsseln/Überprüfen* und wählen die zu entschlüsselnde gpg-Datei.
 
 Die erhaltene Datei enthält nicht nur die verschlüsselte Nachricht, sondern auch die Signatur des Senders. Um diese zu überprüfen, muss der Empfänger den öffentlichen Schlüssel des Senders importiert haben. Damit wird sichergestellt, dass die Nachricht wirklich vom Sender kommt. 
 Wenn der Empfänger auf diese Sicherheit verzichten kann, kann er die Entschlüsselung auch ohne den öffentlichen Schlüssel des Senders durchführen. 
@@ -91,15 +91,15 @@ Es kommt dann eine Warnung, aber die Entschlüsselung funktioniert trotzdem.
 
 Wenn wir in der Kleopatra-Übersicht auf unsere Benutzerkennung klicken und dann Exportieren wählen, sehen wir den öffentlichen Schlüssel.
 
- <img src='bild19.png' width="400">
+<img src='bild19.png' width="400">
 
 
- Der öffentliche Schlüssel für die email-Adresse khtheuer@stiftsgymnasium.de zum Download ist 
- [hier](./Karlheinz-Theuer-0xFE3EA1A0-public.asc)
- 
- -----
+Der öffentliche Schlüssel für die email-Adresse khtheuer@stiftsgymnasium.de zum Download ist 
+[hier](./Karlheinz-Theuer-0xFE3EA1A0-public.asc)
 
- Für MacOS kann die [GPGSuite](https://gpgtools.org/) verwendet werden.
+-----
+
+Für MacOS kann die [GPGSuite](https://gpgtools.org/) verwendet werden.
 
 
 
