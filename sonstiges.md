@@ -8,5 +8,6 @@
 
 [Elliptische Kurven](./zahlentheorie/elliptischeKurven/elliptischeKurven.md)
 
+[Kryptographische Hashfunktionen](./kryptographie/hashfunktionen/hashfunktionen.md)
 
 [Sicheres Email mit Gpg4Win](./zahlentheorie/gpg/gpg.md)
