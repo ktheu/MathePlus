@@ -30,7 +30,11 @@ Das Beispiel zeigt den MD5-Hash in Cryptool2 in hex und binär. Im zweiten Bild 
 <img src="bild3.png" width="1000">
 
 
+[Colab-Notebook](https://colab.research.google.com/drive/10qNeHfuo_utFFpPcoTMbp_-NGuRlhZa7?usp=sharing)
+
+
 ## Links
+
 
 [MD5-Beispiel in  Cryptool2](https://www.youtube.com/watch?v=Rwvpngxp438&t=582s)
 
