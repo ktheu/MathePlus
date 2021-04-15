@@ -53,3 +53,5 @@ Links:
 [Sehr gute Erläuterung mit Beispiel](https://www.youtube.com/watch?v=F3zzNa42-tQ&t=228s)
 
 [Computerphile](https://www.youtube.com/watch?v=NF1pwjL9-DE)
+
+[Understanding ECC through the Diffie-Hellman Key Exchange](https://www.youtube.com/watch?v=gAtBM06xwaw) - Gute Einführung in die prinzipielle Funktionsweise mit den Pros und Cons.
