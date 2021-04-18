@@ -41,7 +41,7 @@ So wie im klassischen Diffie-Hellman der Punkt auf dem Restklassenring herumspri
 
 Beispiel einer tatsächlich genutzten Kurve:  [Curve25519](https://en.wikipedia.org/wiki/Curve25519)
 
-<!-- $y^{2}=x^{3}+486662x^{2}+x$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=y%5E%7B2%7D%3Dx%5E%7B3%7D%2B486662x%5E%7B2%7D%2Bx"> mit <!-- $p = 2^{255}-19$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=p%20%3D%202%5E%7B255%7D-19">, der x-Wert des Generatorpunkts ist $x = 9$. Dadurch wird eine Gruppe von 
+<!-- $y^{2}=x^{3}+486662x^{2}+x$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=y%5E%7B2%7D%3Dx%5E%7B3%7D%2B486662x%5E%7B2%7D%2Bx"> mit <!-- $p = 2^{255}-19$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=p%20%3D%202%5E%7B255%7D-19">, der x-Wert des Generatorpunkts ist <!-- $x = 9$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=x%20%3D%209">. Dadurch wird eine Gruppe von 
 <!-- $ 2^{252}+27742317777372353535851937790883648493$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=2%5E%7B252%7D%2B27742317777372353535851937790883648493"> Punkten erzeugt.
 
 ----
