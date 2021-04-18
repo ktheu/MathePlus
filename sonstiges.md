@@ -8,6 +8,8 @@
 
 [Elliptische Kurven](./kryptographie/elliptischeKurven/elliptischeKurven.md)
 
+[Codierung](./kryptographie/codierung/codierung.ipynb)
+
 [Kryptographische Hashfunktionen](./kryptographie/hashfunktionen/hashfunktionen.md)
 
 [Sicheres Email mit Gpg4Win](./kryptographie/gpg/gpg.md)
