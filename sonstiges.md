@@ -8,7 +8,7 @@
 
 [Elliptische Kurven](./kryptographie/elliptischeKurven/elliptischeKurven.md)
 
-[Codierung](./kryptographie/codierung/codierung.ipynb)
+[Codierung](./kryptographie/codierung/codierung.md)
 
 [Kryptographische Hashfunktionen](./kryptographie/hashfunktionen/hashfunktionen.md)
 
