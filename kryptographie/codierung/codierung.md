@@ -75,9 +75,11 @@ UTF-8 ist die am weitesten verbreitete Codierung von Unicode-Zeichen
 
 <img src='bild3.jpg' width='800'>
 
-Übung: Ermittle den Codepoint Zeichens: 🥺 [pleading face](https://emojipedia.org/pleading-face/). Berechne dann mit der Tabelle die UTF-8 Codierung des Zeichens.
+Übung: Ermittle den Codepoint des Zeichens 🥺 [FACE WITH PLEADING EYES](https://emojipedia.org/pleading-face/). Berechne dann mit der Tabelle die UTF-8 Codierung des Zeichens.
 
 ---
+
+[Colab-Notebook](https://colab.research.google.com/drive/1ldhNCsQZfcwWINaC6yskjAyFTQyMI6Zz#scrollTo=plDxPZKy6HZv)
 
 [Unicode-Miracle (Computerphile)](https://www.youtube.com/watch?v=MijmeoH9LT4)
 
