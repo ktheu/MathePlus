@@ -21,6 +21,8 @@
 
 [Sonstiges](sonstiges.md)
 
+[Klausur](klausur.pdf)
+
 
 
 <!-- --- -->
