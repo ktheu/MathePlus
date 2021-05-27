@@ -17,11 +17,15 @@
  [Code2](https://colab.research.google.com/drive/13QVe8fbby5Z1WY4EG3muzcfG0kn_Oi2q?usp=sharing) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
 
 
+- Lineare Algebra - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) - 
+[Lösungen](./lineareAlgebra/loesungen/loesungen.md)
+
+
 ----
 
 [Sonstiges](sonstiges.md)
 
-[Klausur](klausur.pdf)
+<!-- [Klausur](klausur.pdf) -->
 
 
 
