@@ -18,7 +18,7 @@
 
 
 - [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) - 
-[Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./LineareAlgebra/code.md)
+[Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
 
 
 ----
