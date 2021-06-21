@@ -8,7 +8,7 @@
 [Code](https://colab.research.google.com/drive/17om5BwQLL0VnMtpIVHfF6Z_9e8w2t3TK?usp=sharing) -
 [Mandelbrotmenge](https://nbviewer.jupyter.org/github/ktheu/KursNotebooks/blob/master/215_mandelbrot.ipynb) -
 [Videos Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHRypmtgBFSJs4rKiNg55Qv) -
-[Videos Aufgaben2](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
+[Weitere Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
 
 <!-- - [Klausur](./komplexeZahlen/klausur.pdf) - [Lösung](./komplexeZahlen/klausur_loesungen.pdf) -->
 
