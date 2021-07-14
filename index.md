@@ -10,6 +10,9 @@
 [Videos Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHRypmtgBFSJs4rKiNg55Qv) -
 [Weitere Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
 
+
+- Folgen - [Aufgaben der Zertifikatsklausuren](./folgen/za_folgen.pdf) - [Code](./folgen/code.md)
+
 <!-- - [Klausur](./komplexeZahlen/klausur.pdf) - [Lösung](./komplexeZahlen/klausur_loesungen.pdf) -->
 
 - [Zahlentheorie](./zahlentheorie/Zahlentheorie.pdf) - [Kryptographie](./zahlentheorie/Kryptographie.pdf) -
