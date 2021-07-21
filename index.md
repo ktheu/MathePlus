@@ -11,7 +11,7 @@
 [Weitere Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
 
 
-- Folgen - [Aufgaben der Zertifikatsklausuren](./folgen/za_folgen.pdf) - [Code](./folgen/code.md)
+- Folgen - [Aufgaben der Zertifikatsklausuren](./folgen/za_folgen.pdf) - [Hinweise](./folgen/hinweise.md)
 
 <!-- - [Klausur](./komplexeZahlen/klausur.pdf) - [Lösung](./komplexeZahlen/klausur_loesungen.pdf) -->
 
@@ -28,6 +28,8 @@
 ----
 
 [Sonstiges](sonstiges.md)
+
+Zertifikatsklausur: 7./8. Oktober 2021
 
 <!-- [Klausur](klausur.pdf) -->
 

@@ -1,5 +1,17 @@
 ## Folgen
 
+
+
+#### Anforderungen für die Zertifikatsklausur
+
+<img src="anforderungen.png" width="600">
+
+#### Orientierungsaufgaben für das Uni-Zertifikat
+
+<img src="orientierungsaufgaben1.png" width="600">
+<img src="orientierungsaufgaben2.png" width="600">
+
+
 #### SageMath
 
 [SageMathCell](https://sagecell.sagemath.org/)
