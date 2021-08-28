@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Folgen, Grenzwerte}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\parindent 0mm
+
+
+\textbf{Definition Folge:} Eine (reelle) Folge ist eine Abbildung $a: \mathbb{N} \rightarrow \mathbb{R}$, also
+eine Vorschrift, die jeder natürlichen Zahl $n$ das n-te Folgenglied $a(n) \in \mathbb{R}$ zuordnet.
+Wir schreiben $a_n$ für das n-te Folgenglied und $(a_n)$ für die Folge.
+\bigskip
+
+\textbf{Definition Grenzwert:} Eine Zahl $a \in \mathbb{R}$ heißt Grenzwert der Folge $(a_n)$ wenn gilt: \\
+$\forall \epsilon > 0 \, \exists n_0 \in \mathbb{N} \, \forall n > n_0 : \vert a_n - a \vert < \epsilon$ \\
+
+Besitzt eine Folge $(a_n)$ eine Grenzwert $a$ - auch \textit{Limes} genannt - so sagt man, die Folge \textit{konvergiert} 
+gegen a und schreibt dafür $\lim \limits_{n \to \infty} a_n = a$ oder $(a_n) \rightarrow a$ für $a \rightarrow \infty$.
+
+Andere Formulierung: $a$ heißt Grenzwert der Folge $(a_n)$, wenn in jeder (noch so kleinen) $\epsilon$-Umgebung von $a$ \textit{fast alle} Elemente der Folge liegen.
+
+\bigskip
+
+\textbf{Definition Beschränktheit:} Eine Folge $(a_n)$ heißt beschränkt, wenn es eine Zahl $S \in \mathbb{R}$ gibt, mit 
+$\vert a_n \vert \le S$ für alle $n \in \mathbb{N}$.
+\bigskip
+
+\textbf{Satz:} Jede konvergente Folge ist beschränkt.
+\bigskip
+
+\textbf{Lemma (Dreiecksungleichung):} Für $x,y \in \mathbb{R}$ gilt: $\vert x+y \vert 
+\le \vert x \vert + \vert y \vert$
+\bigskip
+
+\textbf{Satz:} Falls  $\lim \limits_{n \to \infty} a_n = a$ und $\lim \limits_{n \to \infty} b_n = b$, so gilt:\\
+(1)  $\lim \limits_{n \to \infty} (a_n + b_n)= a + b$ \\
+(2)  $\lim \limits_{n \to \infty} (a_n \cdot b_n)= a \cdot b$ \\
+(3)  $\lim \limits_{n \to \infty} \dfrac{a_n}{b_n}= \dfrac{a}{b}$, falls $b, b_n\neq 0$
+\bigskip
+
+
+
+
+
+
+
+\end{document}
