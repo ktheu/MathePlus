@@ -10,7 +10,8 @@
     [Videos Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHRypmtgBFSJs4rKiNg55Qv) -
     [Weitere Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
 
--   [Folgen](folgen/inhalte_folgen.pdf) - [Aufgaben](folgen/aufgaben_folgen.pdf) - [Lösungen](folgen/loesungen/loesungen.md)
+-   [Folgen](folgen/inhalte_folgen.pdf) - [Aufgaben](folgen/aufgaben_folgen.pdf) -
+    [Lösungen](folgen/loesungen/loesungen.md) - [Sonstiges](folgen/sonstiges.md)
 
 <!-- - [Klausur](./komplexeZahlen/klausur.pdf) - [Lösung](./komplexeZahlen/klausur_loesungen.pdf) -->
 

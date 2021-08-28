@@ -1,0 +1,145 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Aufgaben der Zertifikatsklausuren}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\parindent 0mm
+
+
+\textbf{Folgen, Grenzwerte}
+
+
+\bigskip 
+
+\textbf{A2020} \\
+Gegeben seien reelle Folgen $(a_n)$, $(b_n)$ und reelle Zahlen $a, b$.\\
+a. Geben Sie die Definition dafür an, dass $(a_n)$ gegen $a$ konvergiert. \\
+b. Gegeben ist der Satz: Konvergieren die Folgen  $(a_n)$ und  $(b_n)$, so konvergiert
+auch die Summenfolge $(a_n + b_n)$ \\
+b1. Wie lautet der Grenzwert der Folge $(a_n + b_n)$ wenn  $(a_n)$ gegen $a$ und $(b_n)$ gegen $b$
+konvergiert? \\
+b2. Beweisen Sie den Satz. \\
+b3. Formulieren Sie die Umkehrung des Satzes und zeigen Sie, dass diese falsch ist. \\
+c. Bestimmen Sie den Grenzwert der Folge $(a_n)$  mit \\
+$a_n = \dfrac{n^2 \cdot 2^n + 4^n + (-1)^n}{3^n - 4^n}$
+ 
+\bigskip 
+
+\textbf{A2019} \\
+a. Gegeben sind eine reelle Folge $(a_n)$ und eine Zahl $a \in \mathbb{R}$ \\
+a1. Geben Sie die Definition der Konvergenz $a = \lim \limits_{n \to \infty} a_n$. \\
+a2. Beweisen Sie den folgenden Satz: Ist die Folge $(a_n)$ konvergent, so ist sie beschränkt. \\
+a3. Bilden Sie die Umkehrung des Satzes aus a2 und zeigen Sie, dass die Aussage falsch ist. \\
+b. Bestimmen Sie den Grenzwert der Folge: $(b_n)$ mit $b_n = \sqrt{n^2+2n} - \sqrt{n^2-n}$ für alle $n \in
+\mathbb{N}$
+\bigskip 
+
+\textbf{A2018} \\
+a. Gegeben Sie in jeder Teilaufgabe ein Beispiel an für Folgen, die die angegebenen Aussagen erfüllen: \\
+a1. $(a_n)$ ist konvergent und $(b_n)$ ist divergent und $(a_n * b_n)$ ist divergent \\
+a2. $(a_n)$ ist konvergent und $(b_n)$ ist divergent und $(a_n * b_n)$ ist konvergent \\
+a3. $(a_n)$ ist divergent und $(b_n)$ ist divergent und $(a_n * b_n)$ ist divergent \\
+a4. $(a_n)$ ist divergent und $(b_n)$ ist divergent und $(a_n * b_n)$ ist konvergent \\
+
+b. Es seinen $(a_n),(b_n)$ konvergente reelle Folgen mit $a = \lim \limits_{n \to \infty} a_n$ und
+$b = \lim \limits_{n \to \infty} b_n$. Was kann man über die Folge $(a_n * b_n)$ aussagen? (Ohne Beweis!) 
+
+c. Es seinen $(a_n)$ eine gegen $a$ konvergente Folge. Beweisen Sie durch Induktion bezüglich $m$, dass für 
+alle $m \in \mathbb{N}$ gilt: Die Folgen $(a_n^m)$ konvergiert gegen $a^m$. \textit{Hinweis:} Verwenden Sie die Aussage aus Teil b.
+\bigskip 
+
+\newpage
+
+\textbf{A2017} \\
+Mit $(a_n)$ wird eine Folge bezeichnet, die die Folgenglieder $a_n, (n \in \mathbb{N})$ besitzt. \\
+a. Es sei $(a_n)$ eine reelle Folge und a eine reelle Zahl. Geben Sie die Definition der Konvergenz von $(a_n)$ geben $a$ an. \\
+b. Beweisen Sie, dass  $ \lim \limits_{n \to \infty} \dfrac{1}{2^n} = 0$. Weisen Sie dazu nach, dass die Definition der Konvergenz erfüllt ist. \\
+c. Sei $(b_n)$ eine Folge mit $\left|b_n\right| \le \dfrac{1}{2^n}$ für $n \in \mathbb{N}$. Zeigen Sie,
+dass $(b_n)$ geben $0$ konvergiert. Weisen Sie dazu nach, dass die Konvergenzdefinition erfüllt ist. \\
+d. Sei $(c_n)$ eine Folge mit  $\left|c_n\right| \le \dfrac{1}{2}$ für $n \in \mathbb{N}$. Sie weiter die 
+Folge $(d_n)$ definiert durch $d_1 = \dfrac{1}{2}, d_{n+1} = c_n \cdot d_n$ für $n \in \mathbb{N}$.
+Beweisen Sie, dass die Folgen $(d_n)$ gegen Null konvergiert. 
+
+\textit{Hinweis:} Sie dürfen in jedem Aufgabenteil die Resultate der davorliegenden Aufgabenteile verwenden, auch wenn Sie diese nicht bewiesen haben.
+\bigskip 
+
+\textbf{A2016} \\
+Gegeben sei eine reelle Folge $(a_n)$ und eine reelle Zahl $a$. \\
+a. Geben Sie die Definition dafür an, dass die Folge $(a_n)$ gegen a konvergiert, also $\lim \limits_{n \to \infty} a_n = a$ \\
+b.Weise Sie nach, dass  $ \lim \limits_{n \to \infty} \dfrac{1}{n} = 0$ gilt. \\
+c. Es seien $(a_n), (b_n)$ Folgen und es gelte $a_n \le b_n \le a_n + \dfrac{1}{n}$ für $n \in \mathbb{N}$.
+Beweisen Sie: Ist $(a_n)$ konvergent gegen $a$, dann konvergiert auch $(b_n)$ gegen $a$. \\
+d. Bestimmen Sie durch Anwendung der Sätze über konvergente Folgen unter Zuhilfenahme von Teil c) den Grenzwert der Folge $(b_n)$ mit 
+$$b_n := \dfrac{n^4-n^2+5}{(n+3)^2 \cdot (2n-1)^2} + \dfrac{1+(-1)^n}{2n} \cdot  \sin^2(n)$$
+\bigskip
+
+\textbf{Orientierungsaufgaben} \\
+
+\textbf{A1} \\
+a. Untersuchen Sie die nachstehend gegebene Folge auf Konvergenz und bestimmen Sie gegebenenfalls
+ihren Grenzwert durch Anwendung der Sätze über konvergente Folgen. 
+
+$a_n = \dfrac{(n-1)(n+1)}{2n-2} \cdot \dfrac{2n^3+3n^2+5}{3n^4+2n^3+n^2+2}$ 
+
+b. Gegeben sei eine konvergente Folge $a_n$ mit $a_n \in \mathbb{R}, a_n \ge 0$. Zeigen Sie, dass
+für den Grenzwert $a = \lim \limits_{n \to \infty} a_n$ die Ungleichung $a \ge 0$ gilt. \textit{Hinweis:} Sie
+können beispielsweise die Annahme $a < 0$ zum Widerspruch führen.
+\bigskip
+
+\newpage
+
+\textbf{A2} \\
+Gegeben ist die Folge $a_n = \dfrac{n^2}{2n^2+5}$. \\
+a) Bestimmen Sie den Grenzwert. \\
+b) Geben Sie die Definition der Aussage \glqq $a_n$ konvergiert gegen a\grqq\,an. \\
+c) Beweisen Sie für die oben angegebene Folge $a_n$ und den von Ihnen gefundenen Grenzwert $a$, dass die
+Definition von \glqq $a_n$ konvergiert gegen a\grqq\ erfüllt ist.\\
+\bigskip
+
+\textbf{A3} \\
+Untersuchen Sie die nachstehenden Folgen auf Konvergenz und bestimmen Sie gegebenenfalls ihre Grenzwerte. \\
+a) $a_n = \dfrac{2n+1}{n+3} + \dfrac{4n^2+3n+1}{(2n+1)^2} $\\
+b) $a_n = (-1)^n \cdot \dfrac{n+1}{n^2-2} \quad (n \ge 2)$ \\
+c) $a_n = \dfrac{1+2+...+n}{n^2} $ \\
+d) $a_n = (-1)^n \cdot \dfrac{n^2-1}{n^2+1}$ \\
+e) $a_n = \dfrac{2^n-3^n}{2^n+3^n}$
+
+\textbf{A4} \\
+Berechnen Sie folgende Grenzwerte \\
+a) $\lim \limits_{n \to \infty} (\sqrt{3+2n}-\sqrt{2n})$ \\
+b) $\lim \limits_{n \to \infty} (\sqrt{n^2+4n}-\sqrt{n^2+n})$ \\
+
+
+\end{document}
