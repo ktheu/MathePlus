@@ -1,7 +1,7 @@
 ## MathePlus
 
--   [Aussagenlogik](https://nbviewer.jupyter.org/github/ktheu/MathePlus/blob/gh-pages/aussagenlogik/aussagenlogik.ipynb) -
-    [Aufgaben](./aussagenlogik/aussagenlogik.pdf) - [Lösungen](./aussagenlogik/loesungen.md) -
+-   Aussagenlogik -
+    [Aufgaben](./aussagenlogik/aussagenlogik_aufgaben.pdf) - [Lösungen](./aussagenlogik/loesungen/loesungen.md) -
     [Code](https://colab.research.google.com/drive/1RvnruIPMiyX7PJymK9xzJFNjs8scC-3O?usp=sharing)
 
 -   [Komplexe Zahlen](./komplexeZahlen/komplexeZahlen_Inhalte.pdf) - [Aufgaben](./komplexeZahlen/komplexeZahlen.pdf) - [Lösungen](./komplexeZahlen/loesungen.md) -
@@ -24,8 +24,6 @@
     [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
 
 ---
-
-[Sonstiges](sonstiges.md)
 
 Zertifikatsklausur: 7./8. Oktober 2021
 

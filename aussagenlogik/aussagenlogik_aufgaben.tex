@@ -1,0 +1,149 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Aufgaben zur Aussagenlogik}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\parindent 0mm
+
+
+
+\textbf{A2020} \\
+
+a) Beweisen Sie mit Hilfe einer Wahrheitstabelle, dass die Aussage $ \lnot(A \land B) \Leftrightarrow (\lnot A \lor \lnot B)$ für beliebige Wahrheitswerte von A und B wahr ist. \\
+
+
+b) Tim, Chris, Niko und Alex tragen T-Shirts in verschiedenen Farben: Schwarz, weiß, grün und
+blau. Vanessa hat die drei gesehen und erzählt ihren Freundinnen: \\
+(1) Tims Shirt ist nicht schwarz und auch nicht weiß. \\
+(2) Das Shirt von Alex ist blau. \\
+(3) Tim trägt nicht blau und Niko nicht weiß. \\
+Die Freundinnen raten sofort los: Alex trägt blau, Tim grün, Niko schwarz und Chris weiß.
+Aber Vanessa ergänzt, dass alle drei Aussagen (1), (2) und (3) falsch sind. \\
+
+b1) Verneinen Sie die Aussagen (1), (2) und (3). \\
+b2) Beweisen Sie, dass eindeutig bestimmt ist, welcher der vier Jungs welche Farbe trägt,
+wenn die drei Aussagen falsch sind. Geben Sie an, wer welche Farbe trägt.
+\bigskip 
+
+\textbf{A2019} \\
+
+a) Beweisen Sie mit Hilfe einer Wahrheitstabelle, 
+dass die Aussage $(A \Rightarrow B) \Leftrightarrow (\lnot A \lor B) $
+für beliebige Wahrheitswerte von A und B wahr ist. \\
+
+b) Ein Geheimdienst beobachtet vier Spione A, B, C, D und möchte ihre Namen herausbekommen.
+Nachdem ein Treffen der vier Spione beobachtet wurde, steht fest, dass ihre Namen
+Alexander, Francois, James und Pjotr sind, und dass keine zwei den selben Namen besitzen.
+Außerdem konnte ermittelt werden, dass die folgenden Aussagen wahr sind. \\
+
+b1) A heißt James oder Alexander, \\
+b2) Wenn A James heißt, dann heißt C Francois, \\
+b3) Wenn B nicht Alexander heißt, dann heißt C Pjotr, \\
+b4) C heißt nicht Francois, \\
+b5) B heißt Pjotr oder B heißt nicht Francois. \\
+Zeigen Sie, dass die Namen der Spione A, B, C, D durch
+die Angaben eindeutig bestimmt
+sind, und geben Sie an, wie jede der Personen heißt.
+\bigskip 
+
+\newpage
+
+\textbf{A2018} \\
+
+a) Beweisen Sie mit Hilfe einer Wahrheitstabelle, dass die folgende Aussage für beliebige Wahrheitswerte
+von A und B wahr ist:  $(A \Leftrightarrow B) \Leftrightarrow ((A \land B) \lor (\lnot A \land \lnot B))$. \\
+
+b) Vor einem Fußballturnier fachsimpeln Zuschauer über den möglichen Ausgang. Über die drei Favoriten A, B und C 
+werden folgende vier Vermutungen geäußert: \\
+
+a. B gewinnt oder C gewinnt. \\
+b. Wenn B Zweiter wird, dann gewinnt A. \\
+c. Wenn B Dritter wird, dann gewinnt C  nicht. \\
+d. A wird Zweiter oder B wird Zweiter.
+
+Am Ende des Turniers belegen die drei Favoriten tatsächlich die ersten drei Plätze. Es stellt sich heraus, dass 
+alle vier Vermutungen richtig waren. Welche Plätze erzielten A, B, und C?
+\bigskip 
+
+\textbf{A2017} \\
+
+a) Beweisen Sie mit Hilfe einer Wahrheitstabelle, dass die Aussage
+$\lnot (A \Rightarrow B) \Leftrightarrow (A \land \lnot B)$ 
+für beliebige Wahrheitswerte von A, B wahr ist. \\
+
+b) Bei einem Ausflug unterhält sich eine Gruppe von Schülern, es ist von Aki, Bauzi, Chips und
+Dani die Rede. Die Lehrerin möchte wissen, wovon die Schüler reden. Ein Schüler antwortet:
+\glqq Von einem Jungen, einem Mädchen, einem Hund und einer Katze.\grqq\, Außerdem bekommt die
+Lehrerin folgende Hinweise: \\
+(1) Die Katze heißt Chips. \\
+(2) Aki ist nicht der Junge und Bauzi ist nicht das Mädchen. \\
+(3) Wenn Dani das Mädchen ist, dann ist Aki der Hund. \\
+Die Lehrerin meint, da gäbe es mehrere Möglichkeiten. Daraufhin lachen die Schüler los, und
+einer sagt: \glqq Die Hinweise sind alle falsch. \grqq\, Nach kurzem Überlegen weiß die Lehrerin Bescheid. \\
+
+b1) Zeigen Sie, dass die Bedingungen (1), (2), (3) mindestens zwei verschiedene Zuordnungen
+der Namen zulassen. \\
+b2) Verneinen Sie die Aussagen (1), (2) und (3). 
+\textit{Hinweis:} Die Äquivalenz aus Teil a) darf verwendet werden. \\
+b3) Wie heißen der Junge, das Mädchen, die Katze und der Hund? Weisen Sie nach, dass
+die Lösung eindeutig ist.
+\bigskip 
+
+\newpage
+
+\textbf{A2016} \\
+
+a) Beweisen Sie mit Hilfe einer Wahrheitstabelle, dass die Aussage
+$(A \land ( \lnot B \Rightarrow \lnot A)) \Rightarrow B$
+für beliebige Wahrheitswerte von A, B wahr ist. \\
+
+b) Der Kommissar hat drei Tatverdächtige: Paula, Quentin und Ralf. Er weiß: \\
+a. Wenn sich Quentin oder Ralf als Täter herausstellen, ist Paula unschuldig. \\
+b. Ist aber Paula oder Ralf unschuldig, dann muss Quentin ein Täter sein. \\
+c. Ist Ralf schuldig, so ist Paula Mittäterin.
+
+Wer ist schuldig? Wer ist unschuldig?
+\bigskip
+
+\textbf{Orientierungsaufgabe} \\
+
+\textbf{A1}
+
+Beweisen Sie, dass folgende Aussagen für beliebige Wahrheitswerte von A und B wahr sind: \\
+
+a. $[((\lnot A) \Rightarrow B) \land (\lnot B)] \Rightarrow A$ \\
+b. $(A \Rightarrow B) \Leftrightarrow (\lnot A \lor B)$
+
+\end{document}
