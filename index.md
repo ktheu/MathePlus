@@ -1,8 +1,8 @@
 ## MathePlus
 
 -   Aussagenlogik -
-    [Aufgaben](./aussagenlogik/aussagenlogik_aufgaben.pdf) - [Lösungen](./aussagenlogik/loesungen/loesungen.md) -
-    [Code](https://colab.research.google.com/drive/1RvnruIPMiyX7PJymK9xzJFNjs8scC-3O?usp=sharing)
+[Aufgaben](./aussagenlogik/aussagenlogik_aufgaben.pdf) - [Lösungen](./aussagenlogik/loesungen/loesungen.md)
+<!--  [Code](https://colab.research.google.com/drive/1RvnruIPMiyX7PJymK9xzJFNjs8scC-3O?usp=sharing) -->
 
 -   [Komplexe Zahlen](./komplexeZahlen/komplexeZahlen_Inhalte.pdf) - [Aufgaben](./komplexeZahlen/komplexeZahlen.pdf) - [Lösungen](./komplexeZahlen/loesungen.md) -
     [Code](https://colab.research.google.com/drive/17om5BwQLL0VnMtpIVHfF6Z_9e8w2t3TK?usp=sharing) -
