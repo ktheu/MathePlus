@@ -1,6 +1,6 @@
 ## MathePlus
 
--   Aussagenlogik -
+-   [Aussagenlogik](./aussagenlogik/aussagenlogik_inhalte.pdf) -
 [Aufgaben](./aussagenlogik/aussagenlogik_aufgaben.pdf) - [Lösungen](./aussagenlogik/loesungen/loesungen.md)
 <!--  [Code](https://colab.research.google.com/drive/1RvnruIPMiyX7PJymK9xzJFNjs8scC-3O?usp=sharing) -->
 

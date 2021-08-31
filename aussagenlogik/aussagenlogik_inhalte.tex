@@ -1,0 +1,129 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Aussagenlogik, Prädikatenlogik}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\parindent 0mm
+
+\textbf{Aussagenlogik}
+\bigskip
+
+Eine \textbf{Aussage} ist ein Satz oder eine Formel, der man genau einen Wahrheitswert zuordnen kann (w: wahr, f: falsch). Befehle oder Fragen sind keine Aussagen. \\
+Statt w und f nutzen wir auch 1 und 0. \\
+
+Mit \textbf{Junktoren}  können wir zusammengesetzte Aussagen bilden. \\
+
+- Negation - $\lnot$ - nicht \\
+- Konjunktion - $\land$ - und \\
+- Disjunktion - $\lor$ - oder (nicht ausschließend) \\
+- Kontravalenz - $\oplus$ - xor - entweder...oder - ausschließendes oder - $\dot \lor$, $\veebar$ \\
+- Implikation -  $\Rightarrow$ - wenn...dann  \\
+- Äquivalenz - $\Leftrightarrow$ - genau dann, wenn  \\
+ 
+
+\bigskip
+
+\textbf{Wahrheitstafeln} 
+\bigskip 
+\begin{displaymath}
+\begin{array}{|c c|c|c|c|c|c|c|}
+
+p & q & p \land q & p \lor q & p \oplus q & p \Rightarrow q & p \Leftrightarrow q & \lnot p\\ 
+\hline  
+0 & 0 & 0 & 0 & 0 & 1 & 1 & 1\\
+0 & 1 & 0 & 1 & 1 & 1 & 0 & 1\\
+1 & 0 & 0 & 1 & 1 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 0 & 1 & 1 & 0\\
+\end{array}
+\end{displaymath}
+
+\textbf{Gesetze der Aussagenlogik} 
+\bigskip 
+
+\begin{tabular}{l l}
+$  p \Leftrightarrow \lnot (\lnot p) $   &   doppelte Negation \\
+\\
+$p \land q \Leftrightarrow p \land q$ &  Kommutativgesetze\\
+$p \lor q  \Leftrightarrow p \lor q$ \\
+\\
+$(p \land q) \land r \Leftrightarrow p \land (q \land r)$ & Assoziativgesetze \\
+$(p \lor q) \lor r \Leftrightarrow p \lor (q \lor r)$ \\
+\\
+$(p \land q) \lor r\Leftrightarrow (p \lor r) \land (q \lor r)$  & Distributivgesetze \\
+$(p \lor q) \land r \Leftrightarrow (p \land r) \lor (q \land r)$ \\
+\\
+$\lnot(p \land q) \Leftrightarrow \lnot p \lor \lnot q$ & DeMorgansche Regeln \\
+$\lnot(p \lor q) \Leftrightarrow \lnot p \land \lnot q$  \\
+\\
+$p \Rightarrow q \Leftrightarrow \lnot q \Rightarrow \lnot p$ & Kontrapositionsregel \\
+\\
+$p \land p  \Leftrightarrow p $ & Sonstige \\
+$p \lor p  \Leftrightarrow p $  \\
+$p \land \lnot p  \Leftrightarrow 0 $ \\
+$p \lor \lnot p  \Leftrightarrow 1 $ \\
+\\
+$\lnot$ bindet stärker als $\lor$ und $\land$ und diese binden stärker als $\Rightarrow$, $\Leftrightarrow$. 
+\end{tabular} \\
+\bigskip
+
+\textbf{Prädikatenlogik}
+\bigskip
+
+\begin{tabular}{c l}
+
+$\forall x \in X: p(x)$ & Für alle $x$ aus $X$ ist die Aussage $p(x)$ wahr. \\
+$\exists x \in X: p(x)$ & Es gibt mindestens ein $x$ aus $X$ für das die Aussage $p(x)$ wahr ist.\\
+\end{tabular} \\
+
+\bigskip
+\textbf{Prädikatenlogische Verneinungsregeln} \\
+
+$\lnot (\forall x \in X: p(x)) \Leftrightarrow \exists x \in X : \lnot p(x)$   \\
+$\lnot (\exists x \in X : p(x)) \Leftrightarrow \forall x \in X: \lnot p(x)$  
+\bigskip
+
+Quantoren können auch hintereinander stehen: \\
+$\lnot (\forall x \in X \, \exists y \in Y: p(x,y)) \Leftrightarrow \exists x \in X \, \forall y \in Y: \lnot p(x,y)$
+\end{document}
+
+
+
+
+
+
+
+
+
+\end{document}
