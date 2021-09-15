@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Beweise}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\parindent 0mm
+
+Mathematische Sätze sind meist als $A \Rightarrow B$ formuliert. Lies: 'Aus A folgt B' oder 'A impliziert B' oder 'Wenn A wahr ist, dann ist auch B wahr'. \\
+ 
+Man nennt dann $A$ die \textit{Voraussetzung} und $B$ die \textit{Behauptung}. 
+
+\bigskip
+
+\textbf{Direkter Beweis}
+\bigskip
+
+Beim \textit{direkten} Beweis geht man davon aus, dass $A$ wahr ist und folgert durch eine Kette gültiger Argumente, dass dann auch $B$ wahr ist. 
+\bigskip
+
+\textbf{Indirekter Beweis}
+\bigskip
+
+Beim \textit{indirekten Beweis} zeigt man die Kontraposition:
+ $\lnot B \Rightarrow \lnot A$. Man geht davon aus, dass $B$ falsch ist und folgert durch eine Kette
+ gültiger Argumente, dass dann auch $A$ falsch ist.
+\bigskip
+ 
+\textbf{Widerspruchsbeweis}
+\bigskip
+
+ Man geht davon aus, dass die zu beweisende Aussage falsch ist
+und führt dies zu einem Widerspruch, z.B. zu einem absurden Resultat wie $1 < 0$, oder etwa dass gleichzeitig $A$ und $\lnot A$ wahr ist. Somit erweist sich die Annahme, die zu beweisende Aussage sei falsch, als nicht haltbar, woraus die Wahrheit der Aussage folgt.
+\bigskip
+
+\textbf{Vollständige Induktion}
+\bigskip
+
+ Die vollständige Induktion ist ein Beweisverfahren, das in folgender Situation angewendet wird: 
+ Zu jeder natürlichen Zahl $n$ ist eine Aussage
+$A(n)$ gegeben, deren Gültigkeit man beweisen will.
+
+Die Aussagen $A(n)$ sind für alle $n \in \mathbb{N}$ wahr, wenn man Folgendes zeigen kann:
+
+- (IA) Induktionsanfang: $A(1)$ ist wahr. \\
+- (IS) Induktionsschritt: Wenn $A(n)$ wahr ist, dann ist auch $A(n+1)$ wahr.
+
+Die Annahme, dass $A(n)$ wahr ist, heißt Induktionsvoraussetzung (IV).
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+\end{document}

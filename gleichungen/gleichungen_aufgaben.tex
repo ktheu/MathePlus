@@ -1,0 +1,163 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Gleichungen und Ungleichungen}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+
+\parindent 0mm
+
+
+\textbf{Aufgaben der Zertifikatsklausuren}
+\bigskip 
+
+\textbf{A2020} \\
+Gegeben sind die Funktionen $f$ und $h$ mit $f(x)=(x+4)^2$ und $h(x)= \frac{1}{5}(x^2-4)$ für $x \in \mathbb{R}$. \\
+a) Berechnen Sie die Nullstellen von $f$ und $h$ und die Schnittpunkte der Graphen von $f$ und $h$. \\
+b) Skizzieren Sie die Graphen $y = f(x)$ und $y=h(x)$, ihre Schnittpunkte und die Nullstellen von $f$ und $h$ in
+einem geeigneten Koordinatensystem. \\
+c) Bestimmend Sie die Lösungsmenge der Ungleichung $\frac {1}{5}(x^2-4) \le (x+4)^2$. \\
+d) Bestimmen Sie die Lösungsmenge der Ungleichung $\sqrt{\frac {1}{5}(x^2-4)} \le x+4$.
+\bigskip
+
+\textbf{A2019} \\
+a) Bestimmen Sie die Lösungsmenge der Ungleichung $\dfrac{4x-5}{(x+1)(x-2)} \le 0$. \\
+b) Bestimmen Sie reelle Zahlen $A, B$, so dass \\
+$\dfrac{4x-5}{(x+1) (x-2)} = \dfrac{A}{x+1} + \dfrac{B}{x-2}$ für alle $x \in \mathbb{R} \setminus \{-1,2\}$
+erfüllt ist. \\
+c) Skizzieren Sie den Graphen der Funktion $f$ mit \\
+$f(x) = \dfrac{4x-5}{(x+1) (x-2)} $ für $x \in \mathbb{R} \setminus \{-1,2\}$ \\
+unter Berücksichtigung der Nullstellen, des Monotonieverhaltens und der Asymptoten.
+\bigskip
+
+\textbf{A2018} \\
+a) Beweisen Sie, dass die Polynomfunktion $p(x) = 6x^2-12x+7$ für alle reellen Werte von $x$ 
+positive Werte annimmt. \\
+b) Gegeben sind die zwei Gleichungen \\
+\quad $\sqrt{6x^2-12x+7} = 3x-2$ \quad (1) \\
+\quad $\sqrt{6x^2-12x+7} = 2-3x$ \quad (2) \\
+Untersuchen Sie beide Gleichungen auf Lösbarkeit und bestimmen Sie gegebenenfalls alle Lösungen. \\
+c) Bestimmen Sie, für welche reellen Zahlen $x$ die Ungleichung \\
+ $\sqrt{6x^2-12x+7} \le 3x-2$ erfüllt ist.
+\bigskip
+
+\textbf{A2017} \\
+Gegeben ist das Polynom $p(x) = x^3-x^2 -2x+8$ mit $x \in \mathbb{R}$. \\
+a) Zeigen Sie, dass $p$ die Nullstelle $x = -2$ besitzt. \\
+b) Beweisen Sie, dass $p$ keine weitere reelle Nullstelle besitzt. \\
+c) Bestimmen Sie alle drei $x$-Werte, für die $p(x)$ den Wert 8 annimmt. \\
+d) Bestimmen Sie die Lösungsmenge der Ungleichung $p(x) \le 8, x \in \mathbb{R}$.
+\bigskip
+
+\newpage
+
+\textbf{A2016} \\
+a) Skizzieren Sie den Graphen der Funktion $f$ mit 
+$f(x) = \vert x + 5 \vert - \vert x+2 \vert$ für $x \in \mathbb{R}$. \\
+b) Bestimmen Sie alle reellen Lösungen der Gleichung 
+ $\vert x + 5 \vert - \vert x+2 \vert = x + 3$. \\
+c) Bestimmen Sie die Lösungsmenge der Ungleichung 
+ $\vert x + 5 \vert - \vert x+2 \vert \le x + 3$. 
+ \bigskip
+ 
+ \textbf{Sonstige Aufgaben}
+ \bigskip
+ 
+ \textbf{A1 Nullstellen} \\
+ Berechnen Sie die reellen Nullstellen folgender Polynome ohne Taschenrechner: \\
+ a) $p(x) = x^4+2x^3+x^2$ \\
+ b) $p(x) = x^2 -2x -15$ 
+ \bigskip
+ 
+ \textbf{A2 Polynomdivision} \\
+Führen Sie die angegebenen Polynomdivisionen durch. \\
+ a) $(2x^3+4x^2-2x-4) : (x-1)$ \\
+ b) $(x^3-x^2+3x-3) : (x-2)$
+ \bigskip
+ 
+ \textbf{A3 Polynomdivision} \\
+ Faktorisieren Sie folgende Polynome in Linearfaktoren: \\
+ a) $p(x) = x^3+3x^2-4x-12, x \in \mathbb{R}$ \\
+ b) $p(x) = x^3 + x^2 -2x-2,    x \in \mathbb{R}$ \\
+ c) $p(x) = x^3 + x^2 -3x+1,    x \in \mathbb{R}$ 
+ \bigskip
+ 
+ \textbf{A4 Polynomdivision} \\
+Begründen Sie, warum sich das Polynom $p(x) = x^2 +1$ nicht in reelle Linearfaktoren zerlegen lässt.
+ \bigskip
+ 
+ \textbf{A5 Ungleichungen} \\
+ Bestimmen Sie jeweils die Lösungsmenge der angegebenen Gleichung oder Ungleichung für reelle x.\\
+ a) $\vert x- 5 \vert = \vert x \vert +2 $ \\
+ b) $(6x-5)(x+1)(x-2) \ge 0$ \\
+ c) $\dfrac{x}{x-2} \ge \dfrac{3}{(x-2)^2}$ \\
+ d) $\dfrac{2}{x-1} > \dfrac{1}{x}$ \\
+ e) $\vert x-2 \vert + \vert 4 - x \vert \le x + 1 $ \\
+ f) $\dfrac{x+1}{x-1} > 2$
+ 
+ \newpage
+ 
+ \textbf{A6 Ungleichungen} \\
+ Lösen Sie die Ungleichungen und stellen Sie die Lösungsmenge graphisch in einem Koordinatensystem dar. \\
+ a) $\vert x \vert + 2 \vert y \vert \ge 4$ \\
+ b) $\vert x - 2 \vert + 2\vert y + 1 \vert \ge 4$
+ \bigskip
+ 
+ \textbf{A7 Wurzelgleichung}  \\
+ Bestimmen Sie die Lösungsmenge der angegebenen Gleichungen. \\
+ a) $\sqrt{x+2} + x = 4,  x \in \mathbb{R}$ \\
+ b) $\sqrt{x+2} = 10,  x \in \mathbb{R}$ \\
+ c) $\sqrt[3]{x-1} + 10 = 12,  x \in \mathbb{R}$ 
+ \bigskip
+ 
+  \textbf{A8 Wurzelgleichung} \\
+ Bestimmen Sie die Lösungsmenge der angegebenen Wurzelgleichungen. \\
+ a) $\sqrt{4x} -\sqrt{2x+7}=1,  x \in \mathbb{R}$ \\
+ b) $\sqrt{x+30} = 6 \cdot \sqrt{x-5},  x \in \mathbb{R}$ \\
+ c) $\sqrt{x} = \sqrt{x+8} - 2,  x \in \mathbb{R}$ 
+ \bigskip
+ 
+\textbf{A9 Wurzelgleichung} \\
+Gegeben ist die Gleichung $\sqrt{x-6} + \sqrt{x+2} = 2, x \in \mathbb{R}$ \\
+Bestimmen Sie die Lösungsmenge.
+\bigskip
+
+\textbf{A10 Wurzelungleichung} \\
+Bestimmen Sie jeweils die Lösungsmenge der angegebenen Ungleichungen. \\
+a) $\sqrt{x^2+9} + x \le 5,  x \in \mathbb{R}$ \\
+b) $\sqrt{x} \cdot \sqrt{x+6} \le 4,  x \in \mathbb{R}$ \\
+c) $\sqrt{x+2} + x \le 4,  x \in \mathbb{R}$ 
+\bigskip
+
+
+\end{document}
