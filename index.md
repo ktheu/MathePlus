@@ -4,7 +4,7 @@
     [Aufgaben](./aussagenlogik/aussagenlogik_aufgaben.pdf) - [Lösungen](./aussagenlogik/loesungen/loesungen.md) -
     [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIG043YI3KvEk5gIGwzPjAnd)
 
--   [Beweise](./beweise/beweise_inhalte.pdf) - [Aufgaben](./beweise/beweise_aufgaben.pdf) - [Lösungen](./beweise/loesungen/loesungen.md)
+-   [Beweise](./beweise/beweise_inhalte.pdf) - [Aufgaben](./beweise/beweise_aufgaben.pdf) - [Lösungen](./beweise/loesungen/loesungen.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIEQ8OkK3yTVTSrSbnpV0SYa)
 
 -   [Folgen](folgen/inhalte_folgen.pdf) - [Aufgaben](folgen/aufgaben_folgen.pdf) -
     [Lösungen](folgen/loesungen/loesungen.md) - [Sonstiges](folgen/sonstiges.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIF0X2hILLg4611GpyiPMC2g)
