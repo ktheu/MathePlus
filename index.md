@@ -10,8 +10,7 @@
     [Lösungen](folgen/loesungen/loesungen.md) - [Sonstiges](folgen/sonstiges.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIF0X2hILLg4611GpyiPMC2g)
 
 -   [Gleichungen](gleichungen/gleichungen_inhalte.pdf) - [Aufgaben](gleichungen/gleichungen_aufgaben.pdf) -
-[Lösungen](gleichungen/loesungen/loesungen.md)
-<!-- - [Klausur](./komplexeZahlen/klausur.pdf) - [Lösung](./komplexeZahlen/klausur_loesungen.pdf) -->
+    [Lösungen](gleichungen/loesungen/loesungen.md)
 
 -   [Komplexe Zahlen](./komplexeZahlen/komplexeZahlen_Inhalte.pdf) - [Aufgaben](./komplexeZahlen/komplexeZahlen.pdf) - [Lösungen](./komplexeZahlen/loesungen.md) -
     [Code](https://colab.research.google.com/drive/17om5BwQLL0VnMtpIVHfF6Z_9e8w2t3TK?usp=sharing) -
@@ -19,10 +18,9 @@
     [Videos Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHRypmtgBFSJs4rKiNg55Qv) -
     [Weitere Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
 
--   [Zahlentheorie](./zahlentheorie/Zahlentheorie.pdf) - [Kryptographie](./zahlentheorie/Kryptographie.pdf) -
+-   [Zahlentheorie](./zahlentheorie/zahlentheorie_inhalte.pdf) -
     [Aufgaben](./zahlentheorie/aufgaben/kryptographie.pdf) - [Lösungen](./zahlentheorie/loesungen/loesungen.md) -
-    [Code1](https://colab.research.google.com/drive/1zZ7Nk96PlwYYWXzgvDcDHenX_hWuzB6Q?usp=sharing) -
-    [Code2](https://colab.research.google.com/drive/13QVe8fbby5Z1WY4EG3muzcfG0kn_Oi2q?usp=sharing) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
+    [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
 
 -   [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) -
     [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
@@ -38,3 +36,5 @@ Zertifikatsklausur: 7./8. Oktober 2021
 <!-- --- -->
 
  <!-- - [Socrative (Stiftsroom)](https://b.socrative.com/login/student/) -->
+ <!-- [Code1](https://colab.research.google.com/drive/1zZ7Nk96PlwYYWXzgvDcDHenX_hWuzB6Q?usp=sharing) - -->
+  <!-- [Code2](https://colab.research.google.com/drive/13QVe8fbby5Z1WY4EG3muzcfG0kn_Oi2q?usp=sharing)-->

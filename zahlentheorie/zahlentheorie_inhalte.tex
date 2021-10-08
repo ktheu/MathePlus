@@ -1,0 +1,204 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Zahlentheorie}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\parindent 0mm
+
+\newcommand{\ggT}{\operatorname{ggT}}
+\newcommand{\Mod}[3]{#1\equiv#2\mod#3}
+\begin{document}
+
+\textbf{Zahlentheorie} ist die Mathematik der ganzen Zahlen.
+\bigskip
+
+\textbf{Diophantische Gleichungen} \\
+Eine Gleichung der Form $a x + b y = c$ mit $a, b,c \in \mathbb{N}$ und $x,y \in \mathbb{Z}$ heißt
+\textit{diophantische Gleichung}. \\
+In der Regel sind $a,b,c$ gegeben und $x,y$ gesucht. \\
+ Wir schreiben 
+Lösungen als Zahlenpaar $(x/y)$.
+\bigskip
+
+\textbf{Teiler und Primzahlen} \\
+Definition: \\
+(i) Es seien $x \in \mathbb{Z}, k \in \mathbb{N}$. k heißt \textit{Teiler} von $x$, geschrieben $k|x$, falls
+es ein $q \in \mathbb{Z}$ gibt, so dass $x = k \cdot q$. \\
+(ii) Seien $a,b \in \mathbb{N}$. Dann ist der \textit{größte gemeinsame Teiler von $a,b$} definiert durch: \\
+$\text{ggT}(a,b) = \text{max}\{k \in \mathbb{N} : k | a \land k | b \}$ \\
+(iii) Eine natürliche Zahl $p > 1$ heißt \textit{Primzahl} oder \textit{prim}, wenn sie genau zwei
+Teiler besitzt: die 1 und sich selbst.
+\bigskip
+
+\textbf{Hauptsatz der Zahlentheorie} \\
+Jede natürliche Zahl $n > 1$ lässt sich, bis auf die Reihenfolge der Faktoren, eindeutig als Produkt von 
+Primzahlen darstellen. \\
+
+Folgerung: Jeder gemeinsame Teiler von $a$ und $b$ ist auch Teiler von ggT$(a,b)$.
+\bigskip
+
+\textbf{Satz:} Seien $a,b,k \in \mathbb{N}, x,y \in \mathbb{Z}$. Dann gilt: \\
+Aus $k |a$ und $k|b$ folgt $k | (a x + b y)$.
+\bigskip
+
+\textbf{Satz:} Seien $a, b,c \in \mathbb{N}$, $x,y \in \mathbb{Z}$. Dann gilt: \\
+Besitzt die Gleichung  $a x + b y = c$ eine Lösung $(x/y)$, so folgt: ggT$(a,b) | c$.
+\bigskip
+
+\textbf{Satz:} (Teilen mit Rest) Seien $a, b \in \mathbb{N}$. \\
+Dann gibt es eindeutig bestimmte Zahlen $q, r \in \mathbb{N}_0$ mit: $a = q \cdot b + r$ und $0 \le r \le b-1$
+\bigskip
+
+\textbf{Satz:} Seien $a, b \in \mathbb{N}, q,r \in \mathbb{N}_0$ und $a = q \cdot b + r$ . Dann gilt:\\
+$\text{ggT}(a,b) = \text{ggT}(b,r)$
+\bigskip
+
+\textbf{Satz:} (Erweiterter Euklidscher Algorithmus) \\
+$\forall a, b \in \mathbb{N} \, \exists x, y \in \mathbb{Z}: ax + by = \text{ggT}(a,b)$
+\bigskip
+
+\textbf{Satz:} (Lösungen diophantischer Gleichungen) \\
+Gegeben sei die diophantische Gleichung $ax+by=c$. Dann gilt: \\
+ (i)  Es gibt mindestens eine Lösung $(x_0,y_0)$ \\
+(ii) Ist $(x_0,y_0)$ eine Lösung, dann sind auch alle
+Zahlenpaare $(x_0+k b/y_0-k a)$ mit $k \in \mathbb{Z}$ Lösungen. \\
+(iii) Gilt $\text{ggT}(a,b) = 1$, dann sind durch (ii) alle Lösungen gegeben. 
+\bigskip
+
+\textbf{Kongruenz} \\
+Definition: Seien $a, b \in \mathbb{Z} ,m \in \mathbb{N}$. \\
+Dann heißt \textit{a kongruent zu b modulo m}, falls $a-b$ durch $m$ teilbar ist. \\ Wir schreiben dann: $\Mod{a}{b}{m}$.
+\bigskip
+
+\textbf{Satz:} Folgende Aussagen sind äquivalent: \\
+(1) $\Mod{a}{b}{m}$. \\
+(2) $\exists k \in \mathbb{Z}: a = b + k \cdot m$ \\
+(3) Beim Teilen mit Rest a durch m, b durch m bleibt derselbe Rest. 
+\bigskip
+
+\textbf{Satz:} Die Relation \textit{kongruent modulo m} ist eine Äquivalenzrelation auf $\mathbb{Z}$. \\
+(1) $\Mod{a}{a}{m}$ \quad (Reflexivität) \\
+(2) $\Mod{a}{b}{m} \Rightarrow \Mod{b}{a}{m}$ \quad (Symmetrie) \\
+(3) $\Mod{a}{b}{m}$ und $\Mod{b}{c}{m} \Rightarrow \Mod{a}{c}{m}$ \quad (Transitivität) 
+\bigskip
+
+\textbf{Satz:} (Rechenregeln für Kongruenzen) \\
+Wenn  $\Mod{a}{b}{m}$ und  $\Mod{c}{d}{m}$, dann gilt: \\
+(1)  $\Mod{-a}{-b}{m}$  \\
+(2)  $\Mod{a+c}{b+d}{m}$ \\
+(3)  $\Mod{a\cdot c}{b \cdot d}{m}$ \\
+(4)  $\Mod{a^2}{b^2}{m},  \Mod{a^3}{b^3}{m},$ etc. \\
+
+\newpage
+
+\textbf{Restklassen} \\
+Definition: Die \textit{Restklasse $\overline{a}$ von $a$ modulo m} ist definiert durch: \\
+$\overline{a}: = \{b \in \mathbb{Z}: \Mod{b}{a}{m} \}$ \\
+Andere Schreibweise für die Restklasse $\overline{a}$: $[a]$
+\bigskip
+
+\textbf{Rechnen im Restklassenring} \\
+Definition: Seien $a, b \in \mathbb{Z}$. \\
+$\overline{a} + \overline{b} := \overline{a+b}$ \\
+$\overline{a} \cdot \overline{b} := \overline{a \cdot b}$ 
+\bigskip
+
+\textbf{Satz:} (Satz vom Dividieren) \\
+Ist $p$ eine Primzahl und sind $a \in \mathbb{Z}, b \in \{1,...,p-1\}$, so besitzt die Gleichung \\
+$\overline{b} \cdot \overline{x} = \overline{a}$ in $\mathbb{Z}_p$ genau eine Lösung $\overline{x}$,
+d.h. $\dfrac{\overline{a}}{\overline{b}}$ ist definiert.
+\bigskip
+
+\textbf{Merkregel:} \\
+Wenn wir $\dfrac{\overline{1}}{\overline{a}}$ in $\mathbb{Z}_m$ suchen, dann lösen
+wir die diophantische Gleichung $ax+my = 1$. \\
+Es gilt dann: $\dfrac{\overline{1}}{\overline{a}} = \overline{x}$
+\bigskip
+
+\textbf{Der kleine Satz von Fermat:} \\
+Sei $p$ Primzahl, $a \in \mathbb{N}$ kein Vielfaches von $p$. Dann gilt: \\
+$\Mod{a^{p-1}}{1}{p}$
+\bigskip
+
+\textbf{Primitivwurzel} \\
+Definition: Ein Element $\overline{g} \in \mathbb{Z}_m$ heißt \textit{Primitivwurzel}, falls durch
+$\overline{g}^k$ alle Elemente von $\mathbb{Z}_m$ außer $\overline{0}$ dargestellt werden können.
+\bigskip
+
+\textbf{Diffie-Hellman Schlüsselaustausch} \\
+Alice und Bob vereinbaren Primzahl $p$ und $g \in \{1,...,p-1\}$ (am besten eine Primitivwurzel). \\
+Alice wählt geheim eine Zahl $a$ aus, Bob geheim eine Zahl $b$ mit $a,b \in \{1,...,p-1\}$. \\
+Alice berechnet $A = g^a \mod p$, Bob berechnet $B = g^b \mod p$. \\
+Dann tauschen Sie $A$ und $B$ aus. Öffentlich bekannt sind also $p, g, A, B$. \\
+Beide können nun den gemeinsamen Schlüssel $K$ berechnen: \\
+Alice rechnet $K = B^a \mod p$, Bob rechnet $K = A^b \mod p$
+\bigskip
+
+\textbf{RSA-Verfahren} \\
+Alice wählt zwei Primzahlen $p, q$ und berechnet $m = p \cdot q$ und $\tilde{m} = (p-1)  (q-1).$ \\
+Alice wählt Verschlüsselungsexponent $e$ mit $1 < e < \tilde{m}$ und $\ggT(e,\tilde{m}) = 1$. \\
+Alice berechnet den Entschlüsselungsexponent $d$ mit: $ \Mod{e \cdot d}{1}{\tilde{m}}$ \\
+$(m,e)$ ist der öffentliche Schlüssel, $(m,d)$ der private Schlüssel von Alice. \\
+Bob verschlüsselt die Nachricht $n, (0 < n < m)$: $N = n^e \mod m$ \\
+Alice entschlüsselt die Nachricht: $n = N^d \mod m$
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+\end{document}
