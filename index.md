@@ -22,7 +22,7 @@
     [Aufgaben](./zahlentheorie/aufgaben/kryptographie.pdf) - [Lösungen](./zahlentheorie/loesungen/loesungen.md) -
     [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
 
--   [Integrationstechniken](./integration/aufgaben.md) - [Lösungen](./integration/loesungen/loesungen.md)
+<!-- -   [Integrationstechniken](./integration/inhalte.md) - [Lösungen](./integration/loesungen/loesungen.md) -->
 
 -   [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) -
     [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
