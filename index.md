@@ -22,14 +22,14 @@
     [Aufgaben](./zahlentheorie/aufgaben/kryptographie.pdf) - [Lösungen](./zahlentheorie/loesungen/loesungen.md) -
     [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
 
+-   [Integrationstechniken](./integration/aufgaben.md) - [Lösungen](./integration/loesungen/loesungen.md)
+
 -   [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) -
     [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
 
 -   [MathWeb](https://mathweb.de/mod/page/view.php?id=9)
 
 ---
-
-Zertifikatsklausur: 7./8. Oktober 2021
 
 <!-- [Klausur](klausur.pdf) -->
 
