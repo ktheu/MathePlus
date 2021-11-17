@@ -1,0 +1,176 @@
+%\documentclass[11pt,handout]{beamer}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings} 
+\usepackage{stmaryrd}
+\lstset{language=Python, tabsize=4, showstringspaces=false,basicstyle=\footnotesize,mathescape=true} 
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\usepackage{mathtools}
+\usepackage{ulem}
+\usepackage{tikz}
+
+\usetheme{Boadilla}
+\mode<presentation>{
+\useoutertheme[subsection=false]{miniframes}
+\useinnertheme{rectangles}
+%\usecolortheme{crane}
+}
+\parskip 10pt
+
+
+
+\begin{document}
+\title{Vertiefungskurs Mathematik}   
+\author{Beweismethoden} 
+\date{}
+\frame{\titlepage} 
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Direkter Beweis}
+
+Mathematische Sätze sind meist als $A \Rightarrow B$ formuliert.  
+
+Lies: 
+`Aus A folgt B' oder 
+ `A impliziert B' oder `Wenn A wahr ist, dann ist auch B wahr'. 
+ 
+ Statt  `A ist wahr' sagt man auch `A gilt'. \pause
+
+Man nennt dann $A$ die \textit{Voraussetzung} und $B$ die \textit{Behauptung}. \pause
+
+Beim \textit{direkten Beweis} geht man davon aus, dass A wahr ist und folgert durch eine
+Kette gültiger Argumente, dass dann auch B wahr ist.
+\end{frame}
+
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Beispiel}
+ 
+Satz: Teilt eine natürliche Zahl t zwei ganze Zahlen a und b, dann teilt t auch deren Summe.
+
+Voraussetzung: \pause $t \in \mathbb{N}, a, b \in \mathbb{Z}, t|a \text{ und } t|b$ \pause
+
+Behauptung: \pause $t|(a+b)$
+
+Beweis: \pause Es gilt $t|a$ und $t|b$ \pause, d.h. es gibt $k,l \in \mathbb{N}$ mit $t \cdot k = a$ und $t \cdot l = b.$ \pause
+Also gilt: $a + b = t \cdot k + t \cdot l =  t \cdot (k + l)$\pause, was $t | (a +b)$ bedeutet. \pause \hfill $\square$
+
+\end{frame}
+
+
+%---
+\begin{frame}[fragile]
+
+Der Beweis in Kurzform:
+
+\begin{tabular}{l l}
+
+Voraussetzung: &  $t|a \land t|b$ \\
+& $\Rightarrow \exists k,l \in \mathbb{N}: a=k \cdot t \land b = l \cdot t$ \\
+& $ \Rightarrow a+b= k \cdot t + l \cdot t = (k +l) \cdot t  $ \\
+& $ \Rightarrow t | (a+b)  $ \hfill $\square$ \\
+\end{tabular} \pause
+
+Die `mathematische Etikette' verlangt, dass man viel Wert auf Begleittext legt und so wenig Folgepfeile und
+Junktoren wie möglich verwendet.
+
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Indirekter Beweis - Kontraposition}
+
+Will man den Satz $A \Rightarrow B$ beweisen, so kann man auch seine \textit{Kontraposition} beweisen.  
+
+$\lnot B \Rightarrow \lnot A$ \pause
+
+ 
+Satz: Sei $n \in \mathbb{N}$. Wenn $n^2$ gerade, dann ist auch $n$ gerade. \pause
+
+Kontraposition:  \pause Sei $n \in \mathbb{N}$. Wenn $n$ ungerade, dann ist auch $n^2$ ungerade. \pause
+
+Beweis der Kontraposition: Als ungerade Zahl lässt sich $n$ als $n = 2k+1$ mit einem $k \in \mathbb{N}$ darstellen. \pause Für das Quadrat von $n$ gilt daher: 
+
+\quad $n^2=(2k+1)^2\pause=4k^2+4k+1\pause=2(2k^2+2k)+1\pause=2k^{\prime}+1$,
+
+wobei wir $k^{\prime} = 2k^2+2k$ setzen. \pause Somit ist $n^2$ ungerade. \pause  \hfill $\square$
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Indirekter Beweis - Widerspruchsbeweis}
+
+Man geht davon aus, dass die zu beweisende Aussage falsch ist und führt dies zu einem Widerspruch.
+
+Satz: Es gibt unendliche viele Primzahlen. \pause
+
+Beweis: Annahme, es gäbe nur endlich viele Primzahlen \pause $p_1, p_2, ... p_n$. \pause Wir bilden 
+$m = p_1 \cdot p_2 \cdot ... \cdot p_n + 1$. \pause Da m größer ist als jedes $p_1,...,p_n$, kann es keines dieser $p_i$, also keine Primzahl sein. \pause $m$ besteht aus Primfaktoren, wir nehmen an, dass Primzahl $p_k$ als Faktor vorkommt. \pause Dann gilt:
+
+\quad $m = p_k \cdot t =  p_1 \cdot p_2 \cdot ... \cdot p_n + 1$ für ein $t \in \mathbb{N}$. \pause Also gilt: \\
+\quad $p_k \cdot t - p_1 \cdot p_2 \cdot ... \cdot p_n = 1$. \pause Ausklammern von $p_k$ ergibt: \\  
+\quad $p_k \cdot ( t - p_1 \cdot p_2 \cdot ... \text{(ohne $p_k$)} ...\cdot p_n) = 1$. \pause
+
+Das ist unmöglich, da $p_k$ als Primzahl größer als 1 ist. \hfill $\square$
+
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Beweis durch vollständige Induktion}
+
+ Die vollständige Induktion ist ein Beweisverfahren, das in folgender Situation angewendet wird: 
+ Zu jeder natürlichen Zahl $n$ ist eine Aussage
+$A(n)$ gegeben, deren Gültigkeit man beweisen will. \pause
+
+Dazu beweist man:
+
+- (IA) Induktionsanfang: $A(1)$ ist wahr. \\ \pause
+- (IS) Induktionsschritt: Wenn $A(n)$ wahr ist, dann ist auch $A(n+1)$ wahr. \pause
+
+Im Induktionsschritt nennt man die Annahme, dass $A(n)$ wahr ist, Induktionsvoraussetzung (IV).
+
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Beispiel:}
+
+Satz: Für alle $n \in \mathbb{N}$ gilt: $1+2+3+...+n = \frac{1}{2}n(n+1)$
+
+Beweis durch vollständige Induktion: \\
+IA: \pause Für n=1 stimmt die Formel, denn \pause $1 = \pause \frac{1}{2}\cdot 1 \cdot 2$ \\ \pause
+IS: \pause Wir nehmen an, die Formel gilt für $n$. Wir müssen zeigen: \pause \\
+$1 + 2 + ... + n + (n+1)  \overset{!}{=} \pause \frac{1}{2}(n+1)(n+2)$.  \quad \quad (1) \\ \pause
+
+Mit der Induktionsvoraussetzung berechnet sich die linke Seite zu: \\
+$1 + 2 + ... + n + (n+1)  \overset{\text{IV}}{=}  \pause \frac{1}{2}n(n+1) + (n+1) = \pause \frac{1}{2}n^2 + \frac{3}{2}n +1$ \\ \pause
+Die rechte Seite von (1) berechnet sich zu: \\
+ $\frac{1}{2}(n+1)(n+2) = \pause \frac{1}{2}(n^2+2n+n+2) = \pause \frac{1}{2}n^2+ \frac{3}{2}n+1$. \\ \pause
+Also gilt Gleichung (1).  \hfill $\square$
+
+
+\end{frame}
+
+
+
+
+\end{document}

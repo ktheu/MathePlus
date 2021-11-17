@@ -4,7 +4,7 @@
     [Aufgaben](./aussagenlogik/aussagenlogik_aufgaben.pdf) - [Lösungen](./aussagenlogik/loesungen/loesungen.md) -
     [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIG043YI3KvEk5gIGwzPjAnd)
 
--   [Beweise](./beweise/beweise_inhalte.pdf) - [Aufgaben](./beweise/beweise_aufgaben.pdf) - [Lösungen](./beweise/loesungen/loesungen.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIEQ8OkK3yTVTSrSbnpV0SYa)
+-   [Beweise](./beweise/folien/beweise.handout.pdf) [-](./beweise/folien/beweise.beamer.pdf) [Aufgaben](./beweise/aufgaben/beweise_aufgaben.pdf) - [Lösungen](./beweise/loesungen/loesungen.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIEQ8OkK3yTVTSrSbnpV0SYa)
 
 -   [Folgen](folgen/inhalte_folgen.pdf) - [Aufgaben](folgen/aufgaben_folgen.pdf) -
     [Lösungen](folgen/loesungen/loesungen.md) - [Sonstiges](folgen/sonstiges.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIF0X2hILLg4611GpyiPMC2g)
@@ -19,7 +19,9 @@
     [Weitere Aufgaben](https://www.youtube.com/playlist?list=PLWeMgMhRDsIHukQQKS-oggeOCC2WF_gFT)
 
 -   [Zahlentheorie](./zahlentheorie/zahlentheorie_inhalte.pdf) -
-    [Aufgaben](./zahlentheorie/aufgaben/kryptographie.pdf) - [Lösungen](./zahlentheorie/loesungen/loesungen.md) -
+    [Kongruenz und Restklassen](./zahlentheorie/folien/kongruenz.handout.pdf) [-](./zahlentheorie/folien/kongruenz.beamer.pdf)
+    [Kryptographie](./zahlentheorie/folien/kryptographie.handout.pdf) [-](./zahlentheorie/folien/kryptographie.beamer.pdf)
+    [Aufgaben](./zahlentheorie/aufgaben/zahlentheorie.pdf) - [Lösungen](./zahlentheorie/loesungen/loesungen.pdf) -
     [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
 
 <!-- -   [Integrationstechniken](./integration/inhalte.md) - [Lösungen](./integration/loesungen/loesungen.md) -->
@@ -31,7 +33,7 @@
 
 ---
 
-<!-- [Klausur](klausur.pdf) -->
+[Klausur](2021-22-vtm-11-1.pdf)
 
 <!-- --- -->
 

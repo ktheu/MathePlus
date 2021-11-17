@@ -3,11 +3,13 @@
 *.aux
 *.log
 *.gz
+*.nav
+*.out
+*.snm
+*.vrb
+*.toc
 untitled*.*
 *hide*
 klausuren
 hinweise
- 
 
- 
-zahlentheorie/quiz.ipynb
