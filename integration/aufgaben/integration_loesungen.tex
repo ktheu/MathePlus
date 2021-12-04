@@ -1,0 +1,184 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Aufgaben zu Integrationsmethoden}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+\newcommand{\ggT}{\operatorname{ggT}}
+\newcommand{\Mod}[3]{#1\equiv#2\text{ mod }#3}
+\newcommand{\tmod}{\text{ mod }}
+\newcommand\x{1}
+\newcounter{y}
+\setcounter {y} {1}
+
+\parindent 0mm
+
+\textbf{Partielle Integration} 
+\bigskip
+
+\textbf{A\arabic {y}:}   
+Berechne mithilfe partieller Integration
+
+a.  $\displaystyle\int_0^{\frac{\pi}{4}} 2x \cdot \sin(x) \, dx$ \quad
+b.  $\displaystyle\int_0^3 \dfrac{2}{3}x \cdot e^{2x} \, dx$ \quad
+c.  $\displaystyle\int_0^4 x \cdot (x-2)^5 \, dx$ \quad
+\bigskip 
+
+Lösung: \bigskip 
+
+a. $\displaystyle\int_0^{\frac{\pi}{4}} 2x \cdot \sin(x) \, dx = \left[2x(-\cos x )\right]_0^{\frac{\pi}{4}} - 
+ \displaystyle\int_0^{\frac{\pi}{4}}2(-\cos x) \,dx = -\frac{\pi}{4}\sqrt{2} + \sqrt{2}$ \\
+ b.  $\displaystyle\int_0^3 \frac{2}{3}x \cdot e^{2x} \, dx =
+  \left[\frac{2}{3}x\frac{1}{2}e^{2x}  \right]_0^3 - 
+  \displaystyle\int_0^3 \frac{2}{3} \cdot \frac{1}{2}e^{2x} \, dx$ 
+
+\bigskip  \stepcounter{y}
+\textbf{A\arabic {y}:}   
+Berechne durch mehrfache Anwendung partieller Integration
+
+a.  $\displaystyle\int_0^2 3x^2 \cdot e^x \, dx$ \quad
+b.  $\displaystyle\int_0^{\pi} x^2 \cdot \cos(\dfrac{1}{2}x)\, dx$ \quad
+c.  $\displaystyle\int_0^{\frac{5}{2}} x^2\cdot (2x-5)^4 \, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Bestimme eine Stammfunktion von $f$
+
+a.  $f(x) = 2x \cdot \ln(x)$ \quad
+b.  $f(x) = x^2 \cdot \ln(x)$ \quad
+c.  $f(x) = \dfrac{1}{x^2} \cdot \ln(x)$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Berechne die Integrale
+
+a.  $\displaystyle\int_0^{\pi} \cos^2(x)\, dx$ \quad
+b.  $\displaystyle\int_{-1}^1 \sin^2(\pi x)\, dx$ \quad
+c.  $\displaystyle\int_1^2 \dfrac{1}{x} \cdot \ln(x)\, dx$ \quad
+\bigskip  \stepcounter{y}
+
+
+\textbf{Lineare Substitution} 
+\bigskip
+
+\textbf{A\arabic {y}:}  
+Berechne die Integrale
+
+a.  $\displaystyle\int_0^1 3e^{2x-1}\, dx$ \quad
+b.  $\displaystyle\int_1^2 (3-2x)^2\, dx$ \quad
+b.  $\displaystyle\int_0^2 \sqrt{4x+1}\, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{Logarithmische Integration} 
+\bigskip
+
+\textbf{A\arabic {y}:}   
+Berechne die Integrale 
+
+a.  $\displaystyle\int_0^1 \dfrac{2e^x}{2e^x+1}  \, dx$ \quad
+b.  $\displaystyle\int_1^2 \dfrac{2x+2}{x^2+2x+3} \, dx$ \quad
+c.  $\displaystyle\int_1^2 \dfrac{x^2}{1-8x^3}  \, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{Substitution} 
+\bigskip
+
+\textbf{A\arabic {y}:}   
+a.  $\displaystyle\int_0^{\pi/2} 3\sin(x)\cos(x) \, dx$ \quad
+b.  $\displaystyle\int_0^{14} \dfrac{1}{4+x^2}\cdot 2x \, dx$ \quad
+c.  $\displaystyle\int_{-1}^2 x(1+x^2)^3  \, dx$   \\
+
+d.  $\displaystyle\int_{1}^e x^3 \ln(x^4)  \, dx$ \quad
+e.  $\displaystyle\int_0^4 \dfrac{x}{\sqrt{9+x^2}}  \, dx$ \quad
+f.  $\displaystyle\int_2^4 \sqrt{x^2(20-x^2)}  \, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Berechne die folgende Integrale zweimal: Einmal mit Substitution, dann mit partieller Integration.
+
+a.  $\displaystyle\int_e^{e^2} \dfrac{1}{x}\ln(x)\, dx$ \quad
+b.  $\displaystyle\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \dfrac{1}{2}\sin^2(x) \cdot \cos(x)\, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\newpage
+\textbf{A\arabic {y}:}   
+Berechne die folgende Integrale 
+
+a.  $\displaystyle\int_0^1 \dfrac{1}{1+\sqrt{x}}\, dx$ \quad
+b.  $\displaystyle\int_1^2 \dfrac{x+1}{x^2+4x+4} \, dx$ \quad
+c.  $\displaystyle\int_1^{16} \dfrac{6}{2+\sqrt{x}} \, dx$ \quad
+d.  $\displaystyle\int_0^{\sqrt{5}} \dfrac{x^3}{\sqrt{9-x^2}} \, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Bestimme eine Stammfunktion von $f$
+
+a.  $f(x) = \dfrac{x}{\sqrt{4-x^2}}$ \quad 
+b.  $f(x) = \dfrac{e^{2x}}{(e^x-2)^3}$
+\bigskip  \stepcounter{y}
+
+\textbf{Partialbruchzerlegung} 
+\bigskip
+
+\textbf{A\arabic {y}:}   
+Berechne die folgende Integrale
+
+a.  $\displaystyle\int_{-1}^1 \dfrac{3x+3}{(x-2)(x+7)}\, dx$ \quad
+b.  $\displaystyle\int_{5}^6 \dfrac{2}{(x-4)(x+1)}\, dx$ \quad
+c.  $\displaystyle\int_{3}^4 \dfrac{2x+2}{x(x-1)(x-2)}\, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Berechne die folgende Integrale
+
+a.  $\displaystyle\int_{0}^1 \dfrac{2x-4}{(x-3)^2}\, dx$ \quad
+b.  $\displaystyle\int_{1}^2 \dfrac{7x+7}{x^2-3x-10}\, dx$ \quad
+c.  $\displaystyle\int_{0}^1 \dfrac{9x^2+9x+9}{x^3-3x-2}\, dx$ \quad
+d.  $\displaystyle\int_{3}^5 \dfrac{x^2+4}{x^2-4}\, dx$ \quad
+e.  $\displaystyle\int_{-1}^0 \dfrac{4x^2-2x+2}{x^2-4x+3}\, dx$ \quad
+\bigskip  \stepcounter{y}
+
+\textbf{Vermischtes} 
+\bigskip
+
+\textbf{A\arabic {y}:}   
+Berechne mit einer geeigneten Methode
+
+a.  $\displaystyle\int_{0}^{\frac{1}{2}} \dfrac{9x+3}{x^2-1}\, dx$ \quad
+b.  $\displaystyle\int_{0}^{9} \dfrac{\sqrt{x}}{4+\sqrt{x}}\, dx$ \quad
+c.  $\displaystyle\int_{-\pi}^{\pi} (x+3)\sin(x)\, dx$ \quad
+d.  $\displaystyle\int_{0}^{\ln5} \dfrac{e^x-1}{e^x+1}\, dx$ \\
+
+
+\bigskip  \stepcounter{y}
+\end{document}

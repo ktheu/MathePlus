@@ -1,0 +1,277 @@
+%\documentclass[11pt]{beamer}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings} 
+\usepackage{stmaryrd}
+\lstset{language=Python, tabsize=4, showstringspaces=false,basicstyle=\footnotesize,mathescape=true} 
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\usepackage{mathtools}
+\usepackage{ulem}
+\usepackage{tikz}
+
+\usetheme{Boadilla}
+\mode<presentation>{
+\useoutertheme[subsection=false]{miniframes}
+\useinnertheme{rectangles}
+%\usecolortheme{crane}
+}
+\parskip 10pt
+\newcommand{\ggT}{\operatorname{ggT}}
+\newcommand{\Mod}[3]{#1\equiv#2\text{ mod }#3}
+\newcommand{\tmod}{\text{ mod }}
+\newcommand{\ph}{\frac{\pi}{2}}
+
+
+\begin{document}
+\title{Vertiefungskurs Mathematik}   
+\author{Integrationstechniken} 
+\date{}
+\frame{\titlepage} 
+
+%---
+\begin{frame}[fragile]
+
+\textbf{1. Partielle Integration}  
+
+Nach der Produktregel gilt: $(u(x)\cdot v(x))^{\prime} = u^{\prime}(x) \cdot v(x) + u(x) \cdot v^{\prime}(x)$. \\ \pause
+Wir bilden auf beiden Seiten Stammfunktionen und rechnen weiter: \\ \pause
+
+\begin{align*}
+\displaystyle\int (u(x)\cdot v(x))^{\prime} \,dx &= \displaystyle\int u^{\prime}(x) \cdot v(x) \,dx + \displaystyle\int u(x) \cdot v^{\prime}(x) \,dx \\  
+u(x)\cdot v(x) &= \displaystyle\int u(x)^{\prime} \cdot v(x) \,dx + \displaystyle\int u(x) \cdot v^{\prime}(x)\,dx \\
+ \displaystyle\int u(x) \cdot v^{\prime}(x) \,dx  &= u(x)\cdot v(x) -  \displaystyle\int u^{\prime}(x) \cdot v(x) \,dx\\
+ \end{align*}  \pause
+ Kurzform der partiellen Integration: $\int u v^{\prime} = uv - \int u^{\prime} v$ \pause
+ 
+\footnotesize
+Vereinbarung: alle vorkommenden Funktionen sollen stetig differnzierbar sein. Dadurch wird die Existenz aller auftretenden Integrale gesichert.
+\normalsize
+\end{frame}
+
+\begin{frame}[fragile]
+ Beispiel 1:
+   
+$\displaystyle\int_0^4 2x  e^x \,dx$  \pause \quad Wir setzen $u = 2x, v^{\prime} = e^x$ \\ \pause
+
+$\displaystyle\int_0^4 2x  e^x \,dx = \left[2x  e^x\right]_0^4 - \displaystyle\int_0^4 2e^x \,dx \pause =  8e^4 - 0 - \left[2e^x\right]_0^4 \pause
+=  8e^4 - 2e^4+2e^0 = 6e^4 + 2$ \pause
+
+Mögliche Kriterien für die Wahl von $u,v$: \\
+Das Polynom sollte als $u$ gewählt werden. \\
+Der Faktor, der beim Ableiten `einfacher' wird, sollte als $u$ gewählt werden. \\
+
+\end{frame}
+
+%-----
+\begin{frame}[fragile]
+
+Beispiel 2
+  
+$\displaystyle\int_0^{\frac{\pi}{2}} x^2 \sin(x) \,dx$  \pause \quad Wir setzen $u = x^2, v^{\prime} = \sin(x)$ \\ \pause
+  
+$\displaystyle\int_0^{\frac{\pi}{2}} x^2 \sin(x) \,dx = [x^2  (-\cos(x))]_0^{\frac{\pi}{2}} - \int_0^{\frac{\pi}{2}} 2x (-\cos(x)) \,dx $ \\ \pause 
+(Das letzte Integral berechnen wir wieder mit partieller Integration, $u = 2x, v^{\prime} = -\cos(x)$) \\ \pause
+$= -(\frac{\pi^2}{4} \cdot 0 - 0) - ([2x(-\sin(x))]_0^\frac{\pi}{2}- \displaystyle\int_0^\frac{\pi}{2} 2(-\sin(x)) \,dx) \pause = 0 - (-\pi \cdot 1 + 0 - [2 \cos(x)]_0^\frac{\pi}{2}) = -(-\pi-0+2) = \pi-2$ \pause
+
+Ist der eine Faktor ein Polynom vom Grad $n$, so muss man die partielle Integration $n$-mal durchführen, bis die Ableitung
+dieses Faktors eine Konstante ist. \\
+
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+Beispiel 3
+  
+$\displaystyle\int_a^b \ln(x) \,dx$  \quad \pause Wir setzen $u = \ln(x), v^{\prime} = 1$ \\ \pause
+$\displaystyle\int_a^b \ln(x) \,dx = [x \ln(x)]_a^b - \int_a^bx\dfrac{1}{x}\,dx \pause = [x\ln(x)]_a^b -[x]_a^b \pause =   [x\ln(x)-x]_a^b$  \pause
+
+Eine Stammfunktion von $\ln(x)$ ist $x\ln(x)-x$. \pause
+ 
+$\ln(x)$ ist guter Kandidat für $u$. \\
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+Beispiel 4
+  
+$\displaystyle\int_0^\ph \sin(x)\cos(x) \,dx$  \quad \pause Wir setzen $u = \sin(x), v^{\prime} = \cos(x)$ \\ \pause
+$\displaystyle\int_0^\ph \sin(x)\cos(x) \,dx = [\sin(x)\sin(x)]_0^\ph - \displaystyle\int_0^\ph \cos(x)\sin(x) \,dx \pause  = \frac{1}{2}  [\sin^2(x)]_0^\ph \pause = \frac{1}{2}$ \pause
+
+Bei trigonometrischen Funktionen steht manchmal auf beiden Seiten dasselbe Integral. Dann bringt man beide auf eine Seite und teilt durch 2.
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+
+ \textbf{2. Integration durch Substitution}  
+
+Lineare Substitution \pause
+  
+Aus der Kettenregel folgt: Ist $f$ eine verkettete Funktion mit $f(x) = g(mx+b)$ und $G$ Stammfunktion von $g$, dann ist $F(x) = \frac{1}{m}G(mx+b)$ eine Stammfunktion von $f$.  \pause
+
+Beispiele: 
+
+$f(x) = \sin(2x) \pause \Rightarrow \displaystyle\int f(x) = -\dfrac{1}{2}\cos(2x)+c$ \pause
+
+$f(x) = (2x-4)^3 \pause \Rightarrow \displaystyle\int f(x)= \dfrac{1}{8} (2x-4)^4+c$
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+ Logarithmische Integration
+  
+Aus der Kettenregel folgt: Eine Stammfunktion für $\dfrac{g^{\prime}(x)}{g(x)}$ ist $\ln\left|g(x)\right|$. \pause
+
+Beispiele: 
+
+$f(x) = \dfrac{2x}{1+x^2} \pause \Rightarrow \displaystyle\int f(x)  = \ln(1+x^2) + c$ \pause
+ 
+
+$f(x) = \dfrac{6e^{2x}}{5+3e^{2x}} \pause \Rightarrow \displaystyle\int f(x) = \ln(5+3e^{2x}) +c $
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+ Integration durch Substitution  
+  
+Die Kettenregel liefert: $(F \circ u)^{\prime} = f(u(x)) \cdot u^{\prime}(x)$. \\ Daraus ergibt sich: 
+  $\displaystyle\int   f(u(x)) \cdot u^{\prime}(x) \,dx = F \circ u$ \pause
+
+Beispiel 1: $\displaystyle\int \sin(x^2)  2x \,dx$. \pause Setze $f(x)= \sin(x), u(x) = x^2$. \pause
+Es ergibt sich: \\  $\displaystyle\int \sin(x^2)  2x \,dx = -\cos(x^2)$ \pause
+
+Das Verfahren wird in der Praxis einfacher durch das `Rechnen' mit den Differentialen dx und du. \pause
+
+$u = x^2 \pause \Rightarrow \dfrac{du}{dx} = 2x  \pause \Rightarrow dx = \dfrac{du}{2x}$ \pause Also gilt:
+
+$\displaystyle\int \sin(x^2)  2x \,dx = \displaystyle\int \sin(u)  2x  \dfrac{du}{2x}\pause = \displaystyle\int \sin(u) \,du \pause = -\cos(u) +c \pause = -cos(x^2)+c$
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+Beispiel 2:
+  
+$\displaystyle\int (2x^2+1)^3 4x\,dx \pause, \quad u = 2x^2+1 \pause \Rightarrow  \dfrac{du}{dx} =4x \pause \Rightarrow dx = \dfrac{du}{4x}$ \pause
+$\displaystyle\int (2x^2+1)^3 4x\,dx = \int u^3 \,du \pause = \frac{1}{4}u^4+c \pause =  \frac{1}{4}(2x^2+1)^4+c $ \pause
+ 
+Beispiel 3:
+
+$\displaystyle\int \dfrac{x}{\sqrt{1+x^2}}\,dx \pause, \quad u = 1+x^2 \pause \Rightarrow  \dfrac{du}{dx} =2x \pause \Rightarrow dx = \dfrac{du}{2x}$ \pause
+$\displaystyle\int \dfrac{x}{\sqrt{1+x^2}}\,dx  = \int \dfrac{1}{2\sqrt{u}}\,du \pause = \sqrt{u} + c \pause = \sqrt{1+x^2}+c$
+ 
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+\textbf{Substitution bei bestimmten Integralen}
+
+Es gilt:
+  
+ $\displaystyle\int_a^b f(u(x)) \cdot u^{\prime}(x) \,dx = [F \circ u]_a^b \pause =F(u(b))-F(u(a)) \pause = \displaystyle\int_{u(a)}^{u(b)} f(u) \,du$
+ 
+ \end{frame}
+
+%------
+\begin{frame}[fragile]
+Beispiel:
+
+$\displaystyle\int_0^2 \dfrac{8x^3}{\sqrt{x^4+9}}\,dx \pause \quad u = x^4+9  \pause \Rightarrow  \dfrac{du}{dx} =4x^3 \pause \Rightarrow dx = \dfrac{du}{4x^3}$ \pause
+
+$\displaystyle\int_0^2 \dfrac{8x^3}{\sqrt{x^4+9}}\,dx \pause = \displaystyle\int_{u(0)}^{u(2)} \dfrac{2}{\sqrt{u}} \,du \pause
+=\left[4\sqrt{u}\right]_9^{25} = 8.$  \pause
+
+Oder man berechnet erst das unbestimmte Integral,   resubstituiert $u$ und rechnet mit den ursprünglichen Grenzen: \pause
+
+$\displaystyle\int \dfrac{8x^3}{\sqrt{x^4+9}}\,dx = \displaystyle \int \dfrac{2}{\sqrt{u}} \,du \pause =4\sqrt{u} +c\pause  = 4\sqrt{x^4+9} + c $
+
+$\displaystyle\int_0^2 \dfrac{8x^3}{\sqrt{x^4+9}}\,dx \pause =  \left[4\sqrt{x^4+9}\right]_0^2 \pause = 8$
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+Lineare Substitution und Logarithmische Integration sind Spezialfälle der Integraton durch Substitution: \pause
+
+$\displaystyle\int g(mx+c) \,dx \pause \quad u = mx+c  \pause \Rightarrow  \dfrac{du}{dx} =m \pause \Rightarrow dx = \dfrac{du}{m} $ \\ \pause
+$\displaystyle\int g(mx+c) \,dx = \displaystyle\int \dfrac{g(u)}{m} \,du \pause = \dfrac{1}{m}G(u) +c  \pause= \dfrac{1}{m}G(mx+b) + c$ \pause
+
+$\displaystyle\int \dfrac{g^{\prime}(x)}{g(x)} \,dx \pause \quad u =g(x) \pause \Rightarrow  \dfrac{du}{dx} =g^{\prime}(x) \pause \Rightarrow dx = \dfrac{du}{g^{\prime}(x)}$ \\ \pause
+ $\displaystyle\int \dfrac{g^{\prime}(x)}{g(x)} \,dx =   \displaystyle\int \dfrac{1}{u} \,du = \pause \ln\left|u\right| + c \pause = \ln\left|g(x)\right| +c$
+\end{frame}
+
+%------
+\begin{frame}[fragile]
+\textbf{Integration durch Partialbruchzerlegung}
+
+Für jede gebrochenrationale Funktion lässt sich eine Stammfunktion bestimmen, indem man den Funktionsterm in eine geeignet Summe zerlegt. \pause Für eine rationale Funktion $f(x) = \frac{p_1(x)}{p_2(x)}$ gehen wir wie folgt vor:
+
+1. Falls Zählergrad $\ge$ Nennergrad, führe Polynomdivision durch: $f(x) = p_3(x) + \frac{p_4(x)}{p_2(x)}$ \pause
+
+2. Falls eine Nullstelle von $p_2(x)$ auch eine Nullstelle von $p_4(x)$, kürze mit dem entsprechenden Linearfaktor.
+$f(x) = p_3(x) + \frac{p_5(x)}{p_6(x)}$ \pause
+
+3. Der Bruch  $\frac{p_5(x)}{p_6(x)}$ wird aufgespaltet in eine Summe von Partialbrüchen: Jede einfache Nullstelle $a$ des Nenners liefert einen Term $\frac{A}{x-a}$, jede doppelte Nullstelle $b$ den Term $\frac{B_1}{(x-b)} + \frac{B_2}{(x-b)^2}$. \pause
+
+\footnotesize
+Hinweis: Wir beschränken uns auf höchstens doppelte Nullstellen im Nenner und betrachten auch nicht den Fall, dass ein Faktor im Nenner keine Nullstelle hat (z.B: $x^4+1$).
+
+
+ 
+ \end{frame}
+ 
+ 
+%------
+\begin{frame}[fragile]
+Beispiel 1: $\dfrac{5x+7}{(x-1)(x+5)} = \dfrac{A}{x-1} + \dfrac{B}{x+5}$ \pause
+ 
+ Koeffizientenvergleich: 
+\begin{align*} 
+& &5x+7 &= A(x+5)+B(x-1) \\  
+& &5x+7 &= (A+B)x+(5A-B) \\
+\text{LGS: (1)}& &A+B &= 5 \\
+(2)& &5A-B &= 7 \\
+(1)+(2)& &6A &= 12 \\
+& &A &= 2, B= 3
+\end{align*}  \pause
+$\displaystyle\int_2^8 \dfrac{5x+7}{(x-1)(x+5)}\,dx =  \displaystyle\int_2^8 \dfrac{2}{x-1} + \dfrac{3}{x+5}$ \pause
+\\~\\
+$=\left[2\ln\left|x-1\right|+3\ln\left|x+5\right|\right]_2^8 \pause = 2\ln 7 + 3 \ln13 - 2 \ln1 -3 \ln 7 = -\ln7+3\ln13 $
+\end{frame}
+ 
+
+%------
+\begin{frame}[fragile]
+Bestimmung der Koeffizienten durch Betrachtung des Wachstumsverhaltens:
+
+  $\dfrac{5x+7}{(x-1)(x+5)} = \dfrac{A}{x-1} + \dfrac{B}{x+5}$ \pause
+ 
+Wenn sich $x$ der 1 nähert, explodiert der linke Term. \pause Auf der rechten Seite spielt der Term mit dem B bei der Explosion keine Rolle, d.h. das A muss sich dem Term $\frac{5x+7}{x+5}$ annähern, wenn dort die 1 eingesetzt wird. \pause Das ergibt $A = \frac{12}{6} = 2$. \pause Analog erhält man $B = \frac{-18}{-6} = 3$.
+ \end{frame}
+ 
+%------
+\begin{frame}[fragile]
+Beispiel 2:
+
+$\dfrac{x+3}{(x-1)^2(x-5)} = \dfrac{A}{x-1} + \dfrac{B}{(x-1)^2} + \dfrac{C}{x-5}$ \pause
+
+$B$ und $C$ lassen sich durch Betrachtung des Wachstumsverhaltens bestimmen: \pause
+
+$C = \dfrac{5+3}{(5-1)^2} = \dfrac{1}{2}, \pause \quad B = \dfrac{1+3}{1-5} = -1$ \pause 
+
+$A$ ergibt sich durch den Vergleich des Koeffizienten für $x^2$ (wenn die rechte Seite auf einen Bruchstrich gebracht wird). \pause
+
+$0 = Ax^2 +Cx^2 \Rightarrow A = -\dfrac{1}{2}$
+ 
+\end{frame}
+ 
+
+\end{document}
