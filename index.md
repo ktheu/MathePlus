@@ -29,7 +29,7 @@
 -   [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) -
     [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
 
--   [MathWeb](https://mathweb.de/mod/page/view.php?id=9)
+-   [Sonstiges](./sonstiges.md)
 
 ---
 
