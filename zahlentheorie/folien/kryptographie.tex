@@ -176,7 +176,7 @@ Es ist $\overline{d} = \dfrac{\overline{1}}{\overline{e}}$ in $\mathbb{Z}_{\tild
 Fall 1: $p|n \pause \Rightarrow n \equiv 0 \tmod p \pause \Rightarrow (n^e)^d \equiv 0 \tmod p$. \\ \pause
 Fall 2: $p \nmid n$ \pause $\Rightarrow (n^e) ^d = n^{ed} = n^{1+k(p-1)(q-1)}\pause = n \cdot (n^{p-1})^{k(q-1)} \pause \equiv n \tmod p$\pause, 
 da $n^{p-1}\equiv 1 \tmod p$ nach dem kleinen Satz von Fermat. \pause \\ Beweis von (2) analog. \\ \pause
-Aus (1) und (2) folgt: $(n^e)^d - n = k_1 \cdot p = k_2 \cdot q$. mit geeigneten $k_1, k_2 \in \mathbb{Z}$. \pause Da $p, q$ Primzahlen, steckt $k_1$ in $q$ und $k_2$ in $p$. \pause
+Aus (1) und (2) folgt: $(n^e)^d - n = k_1 \cdot p = k_2 \cdot q$. mit geeigneten $k_1, k_2 \in \mathbb{Z}$. \pause Da $p, q$ Primzahlen, steckt $q$ in $k_1$ und $p$ in $k_2$ . \pause
 Also gilt:  $(n^e)^d - n = k_3 \cdot p \cdot q$. \pause Daraus folgt  $(n^e)^d \equiv n \tmod m. \hfill \square{}$
 
 \end{frame}
@@ -199,7 +199,7 @@ Wenn wir versuchen, die Faktoren einer Primzahl mit 300 Stellen zu finden, teste
 $\sqrt{10^{300}} = 10^{150}$ sind. \pause Nach der Abschätzung von Euler gilt für große $n$, dass es ca. $\frac{n}{\ln(n)}$ Primzahlen unterhalb von $n$ gibt. \\ \pause
 $\ln(10^{150}) \pause = 150 \cdot \ln(10) \approx 150 \cdot 2.3 = 345.4$. \pause Also müssen wir $\frac{10^{150}}{345.5} \approx 3 \cdot 10^{147}$ Kandidaten testen. \pause
 
-Annahme: 1 Computer schaft $10^{12}$ Prüfungen pro Sekunde (1 Million Millionen). \pause Das sind im Dauerbetrieb pro Jahr: 
+Annahme: 1 Computer schafft $10^{12}$ Prüfungen pro Sekunde (1 Million Millionen). \pause Das sind im Dauerbetrieb pro Jahr: 
 $10^{12} \cdot 60 \cdot 60 \cdot 24 \cdot 365 \approx 3 \cdot 10^{19}$ Prüfungen. \pause Das bedeutet  
 $\frac{3 \cdot 10^{147}}{3 \cdot 10^{19}} = 10^{128}$ Jahre für alle Prüfungen (Alter des Weltalls: ca. $10^{10}$ Jahre). \pause
 
