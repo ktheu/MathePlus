@@ -60,14 +60,13 @@ Kette gültiger Argumente, dass dann auch B wahr ist.
 
 \textbf{Beispiel}
  
-Satz: Teilt eine natürliche Zahl t zwei ganze Zahlen a und b, dann teilt t auch deren Summe.
+Satz: Teilt eine natürliche Zahl t zwei ganze Zahlen a und b, dann teilt t auch deren Summe. \pause
 
-Voraussetzung: \pause $t \in \mathbb{N}, a, b \in \mathbb{Z}, t|a \text{ und } t|b$ \pause
+Beweis: Da $t$ die Zahlen $a$ und $b$ teilt, kann man $a$ und $b$ darstellen als $a = t \cdot k$ und
+$b = t \cdot l$ für geeignete $k, l \in \mathbb{Z}$. \pause
+Damit gilt: $a + b = t \cdot k + t \cdot l =  t \cdot (k + l)$. \pause
+Da $(k+l) \in \mathbb{Z}$, teilt $t$ auch $a+b$.\hfill $\square$
 
-Behauptung: \pause $t|(a+b)$
-
-Beweis: \pause Es gilt $t|a$ und $t|b$ \pause, d.h. es gibt $k,l \in \mathbb{N}$ mit $t \cdot k = a$ und $t \cdot l = b.$ \pause
-Also gilt: $a + b = t \cdot k + t \cdot l =  t \cdot (k + l)$\pause, was $t | (a +b)$ bedeutet. \pause \hfill $\square$
 
 \end{frame}
 
@@ -75,12 +74,17 @@ Also gilt: $a + b = t \cdot k + t \cdot l =  t \cdot (k + l)$\pause, was $t | (a
 %---
 \begin{frame}[fragile]
 
-Der Beweis in Kurzform:
+Für die eigenen Überlegungen kann es sinnvoll sein, sich Voraussetzung und Behauptung explizit hinzuschreiben und die Argumentation mit mathematischen Symbolen zu entwerfen.  \pause
+
+Voraussetzung: $t \in \mathbb{N}, a, b \in \mathbb{Z}, t|a \text{ und } t|b$ \pause
+
+Behauptung:  $t|(a+b)$  \pause
+
+Beweis:
 
 \begin{tabular}{l l}
-
-Voraussetzung: &  $t|a \land t|b$ \\
-& $\Rightarrow \exists k,l \in \mathbb{N}: a=k \cdot t \land b = l \cdot t$ \\
+& $t|a \land t|b$ \\
+& $\Rightarrow \exists k,l \in \mathbb{Z}: a=k \cdot t \land b = l \cdot t$ \\
 & $ \Rightarrow a+b= k \cdot t + l \cdot t = (k +l) \cdot t  $ \\
 & $ \Rightarrow t | (a+b)  $ \hfill $\square$ \\
 \end{tabular} \pause
@@ -106,9 +110,9 @@ Kontraposition:  \pause Sei $n \in \mathbb{N}$. Wenn $n$ ungerade, dann ist auch
 
 Beweis der Kontraposition: Als ungerade Zahl lässt sich $n$ als $n = 2k+1$ mit einem $k \in \mathbb{N}$ darstellen. \pause Für das Quadrat von $n$ gilt daher: 
 
-\quad $n^2=(2k+1)^2\pause=4k^2+4k+1\pause=2(2k^2+2k)+1\pause=2k^{\prime}+1$,
+\quad $n^2=(2k+1)^2\pause=4k^2+4k+1\pause=2(2k^2+2k)+1$. \pause
 
-wobei wir $k^{\prime} = 2k^2+2k$ setzen. \pause Somit ist $n^2$ ungerade. \pause  \hfill $\square$
+Also ist $n^2$ ungerade.    \hfill $\square$
 \end{frame}
 
 %---
@@ -116,7 +120,7 @@ wobei wir $k^{\prime} = 2k^2+2k$ setzen. \pause Somit ist $n^2$ ungerade. \pause
 
 \textbf{Indirekter Beweis - Widerspruchsbeweis}
 
-Man geht davon aus, dass die zu beweisende Aussage falsch ist und führt dies zu einem Widerspruch.
+Man geht davon aus, dass die zu beweisende Aussage falsch ist und führt dies zu einem Widerspruch. \pause
 
 Satz: Es gibt unendliche viele Primzahlen. \pause
 
@@ -127,7 +131,19 @@ $m = p_1 \cdot p_2 \cdot ... \cdot p_n + 1$. \pause Da m größer ist als jedes 
 \quad $p_k \cdot t - p_1 \cdot p_2 \cdot ... \cdot p_n = 1$. \pause Ausklammern von $p_k$ ergibt: \\  
 \quad $p_k \cdot ( t - p_1 \cdot p_2 \cdot ... \text{(ohne $p_k$)} ...\cdot p_n) = 1$. \pause
 
-Das ist unmöglich, da $p_k$ als Primzahl größer als 1 ist. \hfill $\square$
+Das ist unmöglich, da $p_k$ als Primzahl größer als 1 ist und der Term in der Klammer kein Bruch ist.\hfill $\square$
+
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+
+Satz: $\sqrt{2}$ ist irrational.  \pause
+
+Beweis: Annahme  $\sqrt{2}$ ist rational \pause, dann lässt sich $\sqrt{2}$ darstellen als vollständig gekürzter 
+Bruch $ \dfrac{p}{q}$. \pause Damit gilt $2 \cdot q^2 = p^2$\pause, also ist $p^2$ gerade und damit auch $p$. \pause Also
+lässt sich $p$ darstellen als $p = 2k$ mit geeignetem $k \in \mathbb{N}$.  \pause Eingesetzt in die Gleichung ergibt sich: $2 \cdot q^2 = 4 \cdot k^2$. \pause Daraus folgt  $q^2 = 2 \cdot k^2$\pause, also ist $q^2$ gerade und damit auch $q$. \pause Da $p$ und $q$ beide gerade sind, ist  $ \dfrac{p}{q}$ kein vollständig gekürzter Bruch\pause, im Widerspruch zur Annahme. \hfill $\square$
+ 
 
 \end{frame}
 
