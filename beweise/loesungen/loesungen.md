@@ -10,6 +10,4 @@
 
 -   [A2016](A2016.pdf)
 
--   [A1](A1.pdf)
-
--   [A2](A2.pdf)
+-   [Sonstige Aufgaben](Beweise2.pdf)

@@ -166,11 +166,32 @@ Im Induktionsschritt nennt man die Annahme, dass $A(n)$ wahr ist, Induktionsvora
 \end{frame}
 
 %---
+
+%---
 \begin{frame}[fragile]
 
-\textbf{Beispiel:}
+\textbf{Das Summenzeichen}
 
-Satz: Für alle $n \in \mathbb{N}$ gilt: $1+2+3+...+n = \frac{1}{2}n(n+1)$
+In den Sätzen, die wir mit vollständiger Induktion beweisen werden, wird manchmal das Summenzeichen benutzt:
+
+$\sum\limits_{k=1}^{20}k$ \pause =  $1 + 2 + 3 ..... + 19 + 20$  \pause
+ 
+
+Weitere Beispiele:
+
+$\sum\limits_{k=1}^{n}k = \pause 1 + 2 + 3 ..... + n$  \\ 
+
+$\sum\limits_{j=0}^n (2j+1) = \pause 1 + 3+ 5 + .... + (2n+1)$\\
+
+$\sum\limits_{j=0}^n a^j b^{n-j} = \pause a^0b^n+a^1b^{n-1}+a^2b^{n-2} + ... + a^{n-1}b^1+a^nb^0$
+\end{frame}
+
+%---
+
+\begin{frame}[fragile]
+
+
+Satz: Für alle $n \in \mathbb{N}$ gilt: $\sum\limits_{k=1}^{n}k= \frac{1}{2}n(n+1)$ \pause
 
 Beweis durch vollständige Induktion: \\
 IA: \pause Für n=1 stimmt die Formel, denn \pause $1 = \pause \frac{1}{2}\cdot 1 \cdot 2$ \\ \pause
