@@ -24,7 +24,7 @@
     [Aufgaben](./zahlentheorie/aufgaben/zahlentheorie.pdf) - [Lösungen](./zahlentheorie/loesungen/loesungen.pdf) -
     [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIFh6Nx-aNg6X-Ug5W3bzGr7)
 
--   [Integrationstechniken](./integration/folien/integration.handout.pdf) - [Aufgaben](integration/aufgaben/integration_aufgaben.pdf) - [Lösungen A1-A6](./integration/loesungen/integration_loesungen01.pdf) - [A7-A13](integration/loesungen/integration_loesungen02.pdf)
+-   [Integrationstechniken](./integration/folien/integration.handout.pdf) [-](./integration/folien/integration.beamer.pdf) [Aufgaben](integration/aufgaben/integration_aufgaben.pdf) - [Lösungen A1-A6](./integration/loesungen/integration_loesungen01.pdf) - [A7-A13](integration/loesungen/integration_loesungen02.pdf)
 
 -   [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) -
     [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)

@@ -1,0 +1,211 @@
+\documentclass[11pt]{beamer}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings} 
+\usepackage{stmaryrd}
+\lstset{language=Python, tabsize=4, showstringspaces=false,basicstyle=\footnotesize,mathescape=true} 
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\usepackage{mathtools}
+\usepackage{ulem}
+\usepackage{tikz}
+
+\usetheme{Boadilla}
+\mode<presentation>{
+\useoutertheme[subsection=false]{miniframes}
+\useinnertheme{rectangles}
+%\usecolortheme{crane}
+}
+\parskip 10pt
+
+
+
+\begin{document}
+\title{Vertiefungskurs Mathematik}   
+\author{Folgen} 
+\date{}
+\frame{\titlepage} 
+
+%---
+\begin{frame}[fragile]
+
+
+\textbf{Definition Folge:} Eine (reelle) Folge ist eine Abbildung $a: \mathbb{N} \rightarrow \mathbb{R}$, also
+eine Vorschrift, die jeder natürlichen Zahl $n$ das n-te Folgenglied $a(n) \in \mathbb{R}$ zuordnet. \pause
+Wir schreiben $a_n$ für das n-te Folgenglied und $(a_n)$ für die Folge. \\ \pause
+\bigskip
+
+Beispiel: $(a_n) = 1, 1, 2, 3, 5, 8, 13, ... $ ist eine Folge mit $a_4 = 3$. \pause
+
+Wir können eine Folge auch ansehen als eine Funktion $f: \mathbb{N} \rightarrow \mathbb{R}$ mit $f(n) = a_n$. \pause
+
+Wir können uns eine Folge vorstellen als eine Folge von Punkten auf der Zahlengeraden. \pause
+
+Manchmal lässt man eine Folge auch beim Index 0 beginnen.
+\end{frame}
+
+
+%---
+\begin{frame}[fragile]
+Manchmal ist uns eine Folge durch eine algebraische Vorschrift gegeben. \\ \bigskip \pause
+
+ $a_n = n^2 +1$ \quad beschreibt eine Folge mit den Folgengliedern  \pause \\ $a_1 = 2, a_2 = 5, a_3 = 10 ...$ \\
+\bigskip  \pause
+Manchmal ist es schwierig, eine Formel für das n-te Folgenglied zu finden. Eine Folge kann auch rekursiv beschrieben werden: \pause \bigskip 
+
+$a_n=\begin{cases}
+ 1,  & n=1, n=2 \\
+ a_{n-1}+a_{n-2} & n > 2 
+\end{cases} $
+ 
+Der Wert eines Folgenglieds wird durch Rückgriff auf frühere Folgenglieder festgelegt. 
+\end{frame}
+ 
+
+%---
+\begin{frame}[fragile]
+Zwei Folgen sind dann gleich, wenn sie mit dem gleichen Index starten und die entsprechenden Folgenglieder alle gleich sind. Dieselbe Folge kann uns auf unterschiedliche Arten gegeben sein.  \pause
+
+$a_n = 2^n$ für $n \ge 0$ \pause
+
+$b_n=\begin{cases}
+ 1,  & n=0 \\
+ 2 \cdot b_{n-1} & n > 0 
+\end{cases} $  \pause
+
+Die Folgen $(a_n)$ und $(b_n)$ sind gleich.
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+Wir nutzen die Tribonacci Folge $(a_n)$, um daraus eine neue Folge $(b_n)$ zu bauen.  \pause
+
+$a_n=\begin{cases}
+ 1,  & \text{falls } n=0,1,2 \\
+ 2 \cdot a_{n-1}+a_{n-2}+a_{n-3} & \text{falls } n > 2
+\end{cases} $  \pause
+
+$(a_n) = 1, 1,1,3,5,9,17,31,57,105,...$
+
+$b_n = \dfrac{a_{n+1}}{a_n}$
+
+$(b_n) = 1, 1,3,\dfrac{5}{3}, \dfrac{9}{5}, \dfrac{17}{9}, \dfrac{31}{17}, \dfrac{57}{31}, \dfrac{105}{57} ...$
+
+Die Folge $(b_n)$ mit Dezimalzahlen:
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+\begin{minipage}[t]{4cm}
+\begin{lstlisting} 
+1.00000000000000
+1.00000000000000
+3.00000000000000
+1.66666666666667
+1.80000000000000
+1.88888888888889
+1.82352941176471
+1.83870967741935
+1.84210526315789
+1.83809523809524
+1.83937823834197
+1.83943661971831
+1.83920367534456
+1.83930058284763
+1.83929379809869
+1.83928131922225
+1.83928810384049
+1.83928701345944
+1.83928642063210
+1.83928686638422
+\end{lstlisting} 
+\end{minipage} 
+\begin{minipage}[t]{6cm}
+\bigskip
+Die Folgenglieder $b_n$ scheinen sich einem Grenzwert $b$ anzunähern.  \\
+
+Wir schreiben $b = \lim \limits_{n \to \infty} b_n$ \\
+
+Es kann schwierig sein, den genauen Grenzwert zu berechnen. Für $b_n$ ist es die Zahl: 
+\bigskip
+
+$\frac{1}{3}\sqrt[3]{19 + 3\sqrt{33}} - \frac{1}{3}\sqrt[3]{19 - 3\sqrt{33}} + \frac{1}{3}$ 
+\bigskip
+
+$\approx 1,8392867552$ 
+\end{minipage} 
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+Eine \textbf{arithmetische Folge} ist ein Folge mit einer konstanten Differenz zwischen den Folgengliedern. \\
+$5, 12,19,26,33,...$ \quad $a_n = 5 + 7n$. \\
+Allgemeine Form einer arithmetischen Folge: $a_n = a_0 + d \cdot n$. \\
+Jedes Folgenglied ist das arithmetische Mittel seiner Nachbarn. \bigskip
+
+Eine \textbf{geometrische Folge} ist ein Folge mit einen konstanten Quotienten zwischen den Folgengliedern. \\
+$3, 6,12,24,48,96..$ \quad $a_n = 3 \cdot 2^n$. \\
+Allgemeine Form einer geometrischen Folge: $a_n = a_0 \cdot q^n$. \\
+Jedes Folgenglied ist das geometrische Mittel seiner Nachbarn. \\
+Das geometrische Mittel zweier Zahlen $a,b$ ist definiert als $\sqrt{a\cdot b}.$
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+Wir untersuchen die Folge $a_n = \frac{6n+2}{3n+3}$ \\
+$a_1 = \frac{8}{6} = \frac{4}{3}$ \\
+$a_{1000} = \frac{6002}{3003} \approx 1.99866799866800$ \\
+$a_{1000000} = \frac{6000002}{3000003} \approx 1.99999866666800$ \bigskip
+
+Die Folge nähert sich der $2$, wir schreiben: $\lim \limits_{n \to \infty} a_n = 2$.
+
+Damit drücken wir aus: Wir können mit $a_n$ beliebig nahe an die $2$ kommen, wenn wir n nur groß genug wählen.
+
+Für jedes $\epsilon > 0$ gibt es ein $n_0$, so dass $a_n$ nicht mehr als $\epsilon$ von 2 entfernt ist, wenn nur 
+$n > n_0$ ist.
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+\textbf{Definition Grenzwert:} Eine Zahl $a \in \mathbb{R}$ heißt Grenzwert der Folge $(a_n)$ wenn gilt:  
+
+$\forall \epsilon > 0 \, \exists n_0 \in \mathbb{N} \, \forall n > n_0 : \vert a_n - a \vert < \epsilon$  
+
+Besitzt eine Folge $(a_n)$ eine Grenzwert $a$ - auch \textit{Limes} genannt - so sagt man, die Folge \textit{konvergiert} 
+gegen a und schreibt dafür $\lim \limits_{n \to \infty} a_n = a$ oder $(a_n) \rightarrow a$ für $a \rightarrow \infty$.
+
+Andere Formulierung: $a$ heißt Grenzwert der Folge $(a_n)$, wenn in jeder (noch so kleinen) $\epsilon$-Umgebung von $a$ \textit{fast alle} Elemente der Folge liegen.
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+Beispiel: $a_n = \frac{n+1}{n+2}$. \quad Behauptung:$\lim \limits_{n \to \infty} a_n = 1$. 
+
+Beweis: Sei $\epsilon > 0$. \\
+Wir müssen ein $n_0$ finden, so dass $ \vert a_n - 1 \vert < \epsilon$ für $n > n_0$.
+
+$ \vert a_n - 1  \vert < \epsilon \Leftrightarrow 1 - \frac{n+1}{n+2} < \epsilon \Leftrightarrow (n+2)-(n+1) < \epsilon (n+2)$
+$ \Leftrightarrow \frac{1}{\epsilon} < n+2 \Leftrightarrow \frac{1}{\epsilon} - 2 < n .$ \\
+Wähle als $n_0$ eine Zahl mit $n_0 \ge \frac{1}{\epsilon} - 2. \hfill \square$
+
+
+Beispiel: für $\epsilon = \frac{1}{100}$ wählen wir $n_0 = 98$. Alle Folgenglieder nach $a_{98}$ haben den Abstand kleiner als $\frac{1}{100}$ zum Grenzwert 1.
+
+\end{frame}
+
+
+
+
+
+
+
+\end{document}
