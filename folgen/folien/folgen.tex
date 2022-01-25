@@ -1,4 +1,4 @@
-\documentclass[11pt]{beamer}
+%\documentclass[11pt]{beamer}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -56,7 +56,7 @@ Manchmal lässt man eine Folge auch beim Index 0 beginnen.
 
 %---
 \begin{frame}[fragile]
-Manchmal ist uns eine Folge durch eine algebraische Vorschrift gegeben. \\ \bigskip \pause
+Eine Folge kann durch eine algebraische Vorschrift gegeben. \\ \bigskip \pause
 
  $a_n = n^2 +1$ \quad beschreibt eine Folge mit den Folgengliedern  \pause \\ $a_1 = 2, a_2 = 5, a_3 = 10 ...$ \\
 \bigskip  \pause
@@ -91,14 +91,14 @@ Wir nutzen die Tribonacci Folge $(a_n)$, um daraus eine neue Folge $(b_n)$ zu ba
 
 $a_n=\begin{cases}
  1,  & \text{falls } n=0,1,2 \\
- 2 \cdot a_{n-1}+a_{n-2}+a_{n-3} & \text{falls } n > 2
+ a_{n-1}+a_{n-2}+a_{n-3} & \text{falls } n > 2
 \end{cases} $  \pause
 
-$(a_n) = 1, 1,1,3,5,9,17,31,57,105,...$
+$(a_n) = 1, 1,1,3,5,9,17,31,57,105,...$ \pause
 
-$b_n = \dfrac{a_{n+1}}{a_n}$
+$b_n = \dfrac{a_{n+1}}{a_n}$ \pause
 
-$(b_n) = 1, 1,3,\dfrac{5}{3}, \dfrac{9}{5}, \dfrac{17}{9}, \dfrac{31}{17}, \dfrac{57}{31}, \dfrac{105}{57} ...$
+$(b_n) = 1, 1,3,\dfrac{5}{3}, \dfrac{9}{5}, \dfrac{17}{9}, \dfrac{31}{17}, \dfrac{57}{31}, \dfrac{105}{57} ...$ \pause
 
 Die Folge $(b_n)$ mit Dezimalzahlen:
 \end{frame}
@@ -129,13 +129,13 @@ Die Folge $(b_n)$ mit Dezimalzahlen:
 1.83928686638422
 \end{lstlisting} 
 \end{minipage} 
-\begin{minipage}[t]{6cm}
+\begin{minipage}[t]{6cm} \pause
 \bigskip
-Die Folgenglieder $b_n$ scheinen sich einem Grenzwert $b$ anzunähern.  \\
+Die Folgenglieder $b_n$ scheinen sich einem Grenzwert $b$ anzunähern.  \\ \pause
 
-Wir schreiben $b = \lim \limits_{n \to \infty} b_n$ \\
+Wir schreiben $b = \lim \limits_{n \to \infty} b_n$ \\ \pause
 
-Es kann schwierig sein, den genauen Grenzwert zu berechnen. Für $b_n$ ist es die Zahl: 
+Es kann schwierig sein, den genauen Grenzwert zu berechnen. \pause Für $b_n$ ist es die Zahl: 
 \bigskip
 
 $\frac{1}{3}\sqrt[3]{19 + 3\sqrt{33}} - \frac{1}{3}\sqrt[3]{19 - 3\sqrt{33}} + \frac{1}{3}$ 
@@ -148,27 +148,27 @@ $\approx 1,8392867552$
 %---
 \begin{frame}[fragile]
 Eine \textbf{arithmetische Folge} ist ein Folge mit einer konstanten Differenz zwischen den Folgengliedern. \\
-$5, 12,19,26,33,...$ \quad $a_n = 5 + 7n$. \\
-Allgemeine Form einer arithmetischen Folge: $a_n = a_0 + d \cdot n$. \\
-Jedes Folgenglied ist das arithmetische Mittel seiner Nachbarn. \bigskip
+$5, 12,19,26,33,...$ \pause \quad $a_n = \pause 5 + 7n$. \\ \pause
+Allgemeine Form einer arithmetischen Folge: $a_n = a_0 + d \cdot n$. \\ \pause
+Jedes Folgenglied ist das arithmetische Mittel seiner Nachbarn. \bigskip \pause
 
-Eine \textbf{geometrische Folge} ist ein Folge mit einen konstanten Quotienten zwischen den Folgengliedern. \\
-$3, 6,12,24,48,96..$ \quad $a_n = 3 \cdot 2^n$. \\
-Allgemeine Form einer geometrischen Folge: $a_n = a_0 \cdot q^n$. \\
-Jedes Folgenglied ist das geometrische Mittel seiner Nachbarn. \\
+Eine \textbf{geometrische Folge} ist ein Folge mit einem konstanten Quotienten zwischen den Folgengliedern. \\
+$3, 6,12,24,48,96..$ \pause \quad $a_n = \pause 3 \cdot 2^n$. \\ \pause
+Allgemeine Form einer geometrischen Folge: $a_n = a_0 \cdot q^n$. \\ \pause
+Jedes Folgenglied ist das geometrische Mittel seiner Nachbarn. \\ \pause
 Das geometrische Mittel zweier Zahlen $a,b$ ist definiert als $\sqrt{a\cdot b}.$
 \end{frame}
 
 %---
 \begin{frame}[fragile]
-Wir untersuchen die Folge $a_n = \frac{6n+2}{3n+3}$ \\
-$a_1 = \frac{8}{6} = \frac{4}{3}$ \\
-$a_{1000} = \frac{6002}{3003} \approx 1.99866799866800$ \\
-$a_{1000000} = \frac{6000002}{3000003} \approx 1.99999866666800$ \bigskip
+Wir untersuchen die Folge $a_n = \frac{6n+2}{3n+3}$ \\ \pause
+$a_1 = \pause \frac{8}{6} = \frac{4}{3}$ \\ \pause
+$a_{1000} = \pause \frac{6002}{3003} \approx 1.99866799866800$ \\ \pause
+$a_{1000000} =  \frac{6000002}{3000003} \approx 1.99999866666800$ \bigskip \pause
 
-Die Folge nähert sich der $2$, wir schreiben: $\lim \limits_{n \to \infty} a_n = 2$.
+Die Folge nähert sich der $2$, wir schreiben: $\lim \limits_{n \to \infty} a_n = 2$. \pause
 
-Damit drücken wir aus: Wir können mit $a_n$ beliebig nahe an die $2$ kommen, wenn wir n nur groß genug wählen.
+Damit drücken wir aus: Wir können mit $a_n$ beliebig nahe an die $2$ kommen, wenn wir n nur groß genug wählen. \pause
 
 Für jedes $\epsilon > 0$ gibt es ein $n_0$, so dass $a_n$ nicht mehr als $\epsilon$ von 2 entfernt ist, wenn nur 
 $n > n_0$ ist.
@@ -178,34 +178,202 @@ $n > n_0$ ist.
 \begin{frame}[fragile]
 \textbf{Definition Grenzwert:} Eine Zahl $a \in \mathbb{R}$ heißt Grenzwert der Folge $(a_n)$ wenn gilt:  
 
-$\forall \epsilon > 0 \, \exists n_0 \in \mathbb{N} \, \forall n > n_0 : \vert a_n - a \vert < \epsilon$  
+$\forall \epsilon > 0 \, \exists n_0 \in \mathbb{N} \, \forall n > n_0 : \vert a_n - a \vert < \epsilon$  \pause
 
 Besitzt eine Folge $(a_n)$ eine Grenzwert $a$ - auch \textit{Limes} genannt - so sagt man, die Folge \textit{konvergiert} 
-gegen a und schreibt dafür $\lim \limits_{n \to \infty} a_n = a$ oder $(a_n) \rightarrow a$ für $a \rightarrow \infty$.
+gegen a und schreibt dafür $\lim \limits_{n \to \infty} a_n = a$ oder $(a_n) \rightarrow a$ für $a \rightarrow \infty$. \pause
 
 Andere Formulierung: $a$ heißt Grenzwert der Folge $(a_n)$, wenn in jeder (noch so kleinen) $\epsilon$-Umgebung von $a$ \textit{fast alle} Elemente der Folge liegen.
 \end{frame}
 
 %---
 \begin{frame}[fragile]
-Beispiel: $a_n = \frac{n+1}{n+2}$. \quad Behauptung:$\lim \limits_{n \to \infty} a_n = 1$. 
+Gegeben die Folge: $a_n = \frac{n+1}{n+2}$. \quad Behauptung:$\lim \limits_{n \to \infty} a_n = 1$. \pause
 
-Beweis: Sei $\epsilon > 0$. \\
-Wir müssen ein $n_0$ finden, so dass $ \vert a_n - 1 \vert < \epsilon$ für $n > n_0$.
+Beweis: Sei $\epsilon > 0$. \\ \pause
+Wir müssen ein $n_0$ finden, so dass $ \vert a_n - 1 \vert < \epsilon$ für $n > n_0$. \pause
 
 $ \vert a_n - 1  \vert < \epsilon \Leftrightarrow 1 - \frac{n+1}{n+2} < \epsilon \Leftrightarrow (n+2)-(n+1) < \epsilon (n+2)$
-$ \Leftrightarrow \frac{1}{\epsilon} < n+2 \Leftrightarrow \frac{1}{\epsilon} - 2 < n .$ \\
-Wähle als $n_0$ eine Zahl mit $n_0 \ge \frac{1}{\epsilon} - 2. \hfill \square$
+$ \Leftrightarrow \frac{1}{\epsilon} < n+2 \Leftrightarrow \frac{1}{\epsilon} - 2 < n .$ \\ \pause
+Wähle als $n_0$ eine Zahl mit $n_0 \ge \frac{1}{\epsilon} - 2. \hfill \square$ \pause
 
 
 Beispiel: für $\epsilon = \frac{1}{100}$ wählen wir $n_0 = 98$. Alle Folgenglieder nach $a_{98}$ haben den Abstand kleiner als $\frac{1}{100}$ zum Grenzwert 1.
 
 \end{frame}
 
+%---
+\begin{frame}[fragile]
+Folgen sind nützlich für näherungsweise Berechnungen. \pause  Wir betrachten die ersten 7 Elemente der Folge
+
+$x_1= 1, \quad x_{n+1} = \dfrac{1}{x_n} + \dfrac{x_n}{2}$
+
+\begin{lstlisting} 
+1.00000000000000
+1.50000000000000
+1.41666666666667
+1.41421568627451
+1.41421356237469
+1.41421356237310
+1.41421356237310
+\end{lstlisting} \pause
+
+Die Folge konvergiert gegen $\sqrt{2}$. \pause Wenn man eine gute Näherung für $\sqrt{2}$ benötigt, muss man nur weit genug in der Folge fortschreiten.
+\end{frame}
+
+%---
+
+\begin{frame}[fragile]
+\textbf{Definition:} Eine Folge $(a_n)$ heißt \textbf{nach oben beschränkt}, wenn es eine Zahl $S \in \mathbb{R}$ gibt, mit 
+$a_n  \le S$ für alle $n \in \mathbb{N}$. $S$ heißt dann obere Schranke der Folge. \pause
+
+ Die Folge heißt \textbf{nach unten beschränkt}, wenn es eine Zahl $s \in \mathbb{R}$ gibt, mit 
+$s \le a_n$ für alle $n \in \mathbb{N}$. $s$ heißt dann untere Schranke der Folge. \pause
+
+Die Folge heißt \textbf{beschränkt}, wenn sie nach oben und nach unten beschränkt ist. \pause
 
 
+Beispiele: Die Folge $(a_n)$ mit $a_n = \sin(n)$ \pause ist eine beschränkte Folge. \\
+Die Folge $(a_n)$ mit $a_n = n \cdot \sin(\frac{\pi  n}{2})$ \pause ist weder nach oben noch nach unten beschränkt.
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+\textbf{Satz:} Jede konvergente Folge ist beschränkt. \pause
+
+Beweis: Sei $(a_n)$ eine Folge und a ihr Grenzwert. \pause  Wähle $\epsilon = 1$. Dann liegen in der $\epsilon$-Umgebung
+$U = (a-1, a+1)$ fast alle Folgenglieder. \pause Die endlich vielen Elemente außerhalb von U haben ein größtes und ein 
+kleinstes Element. \pause Das sind die Schranken der Folge. \pause Falls unterhalb oder oberhalb von U keine Elemente vorhanden sind, wählen wir den Rand von U als Schranke. \hfill $\square$
+\end{frame}
+%---
+
+%---
+\begin{frame}[fragile]
+
+\textbf{Grenzwertsätze:}
+Für konvergente Folgen $(a_n)$ und $(b_n)$ gilt: 
+
+(G1) Die Summenfolge $(a_n + b_n)$ ist konvergent und ihr Grenzwert ist die Summe der Grenzwerte von
+$(a_n)$ und $(b_n)$: \\
+$\lim \limits_{n \to \infty} (a_n + b_n)= \lim \limits_{n \to \infty} a_n + \lim \limits_{n \to \infty} b_n$ \pause
+
+(G2) Die Produktfolge $(a_n \cdot b_n)$ ist konvergent und ihr Grenzwert ist das Produkt der Grenzwerte von
+$(a_n)$ und $(b_n)$: \\
+$\lim \limits_{n \to \infty} (a_n  \cdot b_n)= \lim \limits_{n \to \infty} a_n \cdot \lim \limits_{n \to \infty} b_n$ \pause
+ 
+ (G3) Ist  $\lim \limits_{n \to \infty} b_n \ne 0$, so sind fast alle $b_n \ne 0$, und die (ggf. erst ab einem Index $N>1$ definierte) Quotientenfolge $(\dfrac{a_n}{b_n})$ konvergiert gegen:
+ $\lim \limits_{n \to \infty} \frac{a_n}{b_n}=  \frac{\lim \limits_{n \to \infty} a_n }{\lim \limits_{n \to \infty} b_n}$ \pause
+ 
+ Man darf also den Limes in Summe, Produkt und Quotient zweier Folgen `reinziehen',
+wenn(!) die Ausgangs-Folgen konvergent sind.
+\end{frame}
+%---
 
 
+%---
+\begin{frame}[fragile]
+
+Zum Beweis der Grenzwertsätze benötigen wir:
+
+\textbf{Lemma:}
+Für zwei reelle Zahlen $x, y \in \mathbb{R}$ gilt die \textit{Dreiecksungleichung}
+
+$\vert x+y \vert \le \vert x \vert + \vert y \vert$ \pause
+
+Beweis: Aus der Definition des Betrags folgt unmittelbar: \\
+ $\pm x \le \vert x \vert$ und  $\pm y \le \vert y \vert$ \pause  Also gilt: \\
+$x+y \le \vert x \vert + \vert y \vert$ \pause und $-(x+y) = (-x)+(-y) \le  \vert x \vert + \vert y \vert$.  \\ \pause
+Insgesamt gilt also: $\vert x + y \vert \le \vert x \vert + \vert y \vert. \hfill \square$. 
+
+\end{frame}
+%---
+
+%---
+\begin{frame}[fragile]
+
+Beweis von G1:
+
+Sei $\epsilon > 0$ gegeben. \pause Dann gibt es $n_1, n_2 \in \mathbb{N}$ mit $\vert a_n-a \vert < \frac{\epsilon}{2}$
+für $n > n_1$ und $\vert b_n-b \vert < \frac{\epsilon}{2}$ für $n > n_2$. \pause Wir setzen $n_0$ als das Maximum von $n_1$
+und $n_2$. \pause Dann gilt für alle $n > n_0$: \\
+$\vert a_n + b_n - (a + b) \vert = \vert a_n - a + b_n -b \vert \le \vert a_n - a \vert + \vert b_n - b \vert <
+ \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon$ \\ \hfill $\square$ \pause
+ 
+Beweis von G2: \\
+ Sei $\epsilon > 0$ gegeben. \pause Es gilt: \\
+$\vert a_n b_n - ab \vert = \vert a_n b_n + a_n b - a_n b - ab \vert =  \vert a_n( b_n - b) + (a_n - a)b \vert
+\le  \vert a_n( b_n - b)\vert + \vert (a_n - a)b \vert =  \vert a_n\vert \vert ( b_n - b)\vert + \vert (a_n - a)\vert \vert b\vert$. \pause
+
+Da $(a_n)$ konvergiert, gibt es eine Schranke $S$ mit der wir den ersten Summanden abschätzen können. 
+ $ \vert a_n\vert \vert ( b_n - b)\vert  \le S  \vert ( b_n - b)\vert$. \pause
+ 
+ Wir wählen $n_1$ und $n_2$ so, dass beide Summanden für größere $n$ kleiner als $\frac{\epsilon}{2}$ sind. \pause
+ Für $n > max\{n_1, n_2\}$ gilt dann:
+$\vert a_n b_n - ab  \vert  \le S  \vert ( b_n - b)\vert + \vert b\vert\vert (a_n - a)\vert \le \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon$. \hfill $\square$ 
+
+\end{frame}
+%---
+
+\begin{frame}[fragile]
+\textbf{Definition:} Eine Folge $(a_n)$ heißt \textbf{monoton wachsend}, wenn $a_{n+1} \ge a_n$ für
+alle $n\in \mathbb{N}$ gilt. Gilt sogar $>$ anstelle von $\ge$, so heißt die Folge \textbf{streng monoton
+wachsend}. \pause
+
+Entsprechend ist \textbf{(streng) monoton fallend} definiert. \pause
+
+Eine Folge heißt \textbf{(streng) monoton}, wenn sie (streng) monoton wachsend oder
+(streng) monoton fallend ist. \pause
+
+Beispiele: Die Folge $(a_n)$ mit $a_n = n^2$ \pause ist streng monton wachsend. \pause
+
+Die Folge $(b_n)$ mit $b_n = 1,1,2,2,3,3,4,4,....$ \pause ist monton wachsend, aber nicht streng monoton wachsend. \pause
+
+Andere Formulierung: Eine Folge ist monoton, wenn alle Folgenglieder in dieselbe Richtung gehen.
+\end{frame}
+
+\begin{frame}[fragile]
+\textbf{Satz (Montoniekriterium):} Jede beschränkte monotone Folge konvergiert. \pause
+
+Statt eines formalen Beweises machen wir uns den Inhalt geometrisch plausibel: \pause Da die Folge eine obere Schranke hat, hat sie auch eine kleinste obere Schranke. Das ist dann der Grenzwert. \pause
+
+Beispiel: Die Folge $(a_n)$ sei gegeben durch $a_1 = 1$ und $a_{n+1} = \sqrt{a_n+2}$. Mit vollständiger Induktion wir zeigen wir, dass $(a_n)$ streng monoton wächst und beschränkt ist: $0 \le a_n \le 2$ für alle $n \in \mathbb{N}$. \pause
+Also hat $(a_n)$ einen Grenzwert. \pause Der Grenzwert erfüllt die Gleichung $x = \sqrt{x+2}$,  daraus berechnen wir den Grenzwert $a = 2$. 
+
+\end{frame}
+
+\begin{frame}[fragile]
+\textbf{Exkurs:} Gibt es eine Folge, die jede ganze Zahl enthält? \pause
+
+$(a_n): 0,-1,1,-2,2,-3,3,-4,4,..... $ \pause
+
+$a_n=\begin{cases}
+ -\frac{n+1}{2},  & \text{falls n ungerade}\\
+\frac{n}{2} & \text{falls n gerade }
+\end{cases} $  \pause
+
+Zwei endliche Mengen haben gleich viele Elemente, wenn man eine eindeutige Zuordnung zwischen den Elementen der beiden Mengen herstellen kann. \pause Auf unendliche Mengen übertragen zeigt die Folge: Es gibt genauso viele natürliche Zahlen wie ganze Zahlen. \pause
+
+Etwas Unendliches wird nicht notwendig kleiner, wenn man etwas wegnimmt.
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\textbf{Exkurs:} Gibt es eine Folge, die jede reelle Zahl enthält? \pause 
+
+Einfachere Version: Gibt es eine Folge, die jede reelle Zahl zwischen 0 und 1 enthält? \pause
+
+Annahme: Es gibt Folge $(a_n)$, in der alle reellen Zahlen zwischen 0 und 1 vorkommen. \pause Jedes $a_n$ hat eine Dezimalentwicklung. \pause Sei $D$ die $n$-te Dezimalstelle von $a_n$. \pause Wir konstruieren eine Zahl $x$ mit
+
+Die $n$-te Dezimalstelle von $x = $ 
+$\begin{cases}
+D+1,  & \text{ falls } D \le 7,\\
+D-1  & \text{ falls } D=8 \text{ oder } D=9 
+\end{cases} $   \pause
+
+Dann ist $x$ eine reelle Zahl zwischen 0 und 1 \pause, kann aber kein Element der Folge $(a_n)$ sein, da es sich von jedem $a_n$ in mindestens einer Dezimalstelle unterscheidet. \hfill $\square$
+
+\end{frame}
 
 
 \end{document}
