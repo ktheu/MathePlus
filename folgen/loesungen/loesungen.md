@@ -12,10 +12,4 @@
 
 -   [A2016](A2016.pdf)
 
--   [A1](A1.pdf)
-
--   [A2](A2.pdf)
-
--   [A3](A3.pdf)
-
--   [A4](A4.pdf)
+-   [A1-A7](aufgaben_folgen_loesungen.pdf)
