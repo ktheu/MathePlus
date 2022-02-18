@@ -1,0 +1,50 @@
+\documentclass[11pt]{beamer}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings} 
+\usepackage{stmaryrd}
+\lstset{language=Python, tabsize=4, showstringspaces=false,basicstyle=\footnotesize,mathescape=true} 
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\usepackage{mathtools}
+\usepackage{ulem}
+\usepackage{tikz}
+
+\usetheme{Boadilla}
+\mode<presentation>{
+\useoutertheme[subsection=false]{miniframes}
+\useinnertheme{rectangles}
+%\usecolortheme{crane}
+}
+\parskip 10pt
+
+\begin{document}
+\title{Vertiefungskurs Mathematik}   
+\author{Gleichungen und Ungleichungen} 
+\date{}
+\frame{\titlepage} 
+
+%---
+\begin{frame}[fragile]
+
+Lösungen für Gleichungen oder Ungleichungen können wir auf unterschiedliche Weisen angeben.
+\begin{itemize}
+\item Aufzählen der Lösungen:  $x_1 = 2, x_2 = -3$ \\
+\item Angabe der Lösungsmenge in Mengenschreibeweise: $\mathbb{L} = \{2; -3\}$ \\
+\item Angabe der Lösungsmenge als Intervall:  $\mathbb{L} =(-1, 2]$ 
+
+\end{itemize}
+.
+\end{frame}
+
+
+\end{document}
