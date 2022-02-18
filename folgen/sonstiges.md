@@ -12,6 +12,10 @@ print(limit(a(k), k=infinity))                      # Grenzwert berechnen
 points([(k,a(k)) for k in range(1,50)])             # Plot der Punkte
 ```
 
+#### Grenzwertaufgaben
+
+[Grenzwertaufgaben](Grenzwerte.pdf)
+
 #### Online Aufgaben
 
 [MathWeb](https://mathweb.de/mod/page/view.php?id=9) - Abschnitt Summen und Folgen ab _Eigenschaften von Folgen_
