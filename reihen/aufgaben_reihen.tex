@@ -1,0 +1,110 @@
+\documentclass[landscape,twocolumn,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{listings}
+\usepackage{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{booktabs} % schöne Tabellen
+\usepackage{graphicx}
+\usepackage{csquotes} % Anführungszeichen
+\usepackage{paralist} % kompakte Aufzählungen
+\usepackage{amsmath,textcomp,tikz} %diverses
+\usepackage{eso-pic} % Bilder im Hintergrund
+\usepackage{mdframed} % Boxen
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{mathtools}
+\usepackage[top=20mm,left=10mm,right=10mm,bottom=10mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Reihen}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\lstset{language=Python, tabsize=4, basicstyle=\footnotesize, showstringspaces=false, mathescape=true}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+\begin{document}
+\newcounter{y}
+\setcounter {y} {1}
+\parindent 0mm
+
+
+\textbf{Reihen}
+\bigskip 
+
+\textbf{A\arabic {y}:}   
+Bestimme den Grenzwert der Reihen \\
+a. $\sum\limits_{k=0}^\infty (\dfrac{1}{10})^k$ \quad
+b. $\sum\limits_{k=1}^\infty \dfrac{2^k+(-3)^k}{5^k}$ \quad
+c. $\sum\limits_{k=2}^\infty \dfrac{2^{k+1}}{7 \cdot 5^k}$  \quad
+d. $-\frac{1}{2} + \frac{1}{6} - \frac{1}{18} + \frac{1}{54} - \frac{1}{162} ...$
+\bigskip  \stepcounter{y}
+
+\textbf{A\arabic {y}:}  
+Wandle in einen Bruch um: \\
+a. $0.\overline{48}$ \quad b. $3.1\overline{48}$ \quad c. $0.\overline{1234}$
+\bigskip \stepcounter{y}
+ 
+
+\textbf{A\arabic {y}:}   
+Bestimme den Grenzwert der Reihen (Hinweis: Teleskopreihen) \\
+a. $\sum\limits_{k=1}^\infty \dfrac{1-\frac{1}{\pi}}{\pi^k}$ \quad
+%b. $\sum\limits_{k=1}^\infty \dfrac{1}{4k^2-1}$ \quad
+b. $\sum\limits_{k=1}^\infty (\frac{1}{k}-\frac{1}{k+3})$ \quad
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Zeige durch Vergleich mit der harmonischen Reihe: \quad
+$\sum\limits_{k=1}^\infty \dfrac{1}{\sqrt{k}}= \infty$  
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Sind die Reihen konvergent? \\
+a. $\sum\limits_{n=0}^\infty (\frac{\cos n}{3})^n$   \quad
+b. $\sum\limits_{n=0}^\infty \frac{n^2}{3^n}$   \quad
+c. $\sum\limits_{n=0}^\infty \frac{x^n}{n!}$   \quad
+\bigskip \stepcounter{y}
+
+
+\textbf{A\arabic {y}:}   
+Bestimme den Konvergenzradius der Potenzreihen \\
+a. $\sum\limits_{n=0}^\infty \frac{k+2}{2^k}x^k$   \quad
+b. $\sum\limits_{n=0}^\infty \frac{(2+x)^{2k}}{(2+\frac{1}{k})^k}$   \quad
+c. $\sum\limits_{n=0}^\infty \frac{3^{k+2}}{2^k}x^k$   \quad
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Bestimme Taylorreihe und Konvergenzradius um $x_0 =0$ \\
+a. $f(x) = e^{-x}$   \quad b. $f(x) = e^{x^2}$ \quad c. $f(x) = \ln(1-\frac{x}{2})$ \quad d.$f(x) = \frac{1}{1+x}$
+\bigskip \stepcounter{y}
+
+\textbf{A\arabic {y}:}   
+Bestimme das Taylorpolynom $p_5$ \\
+a. $f(x) = \sqrt{1-x}$  \\
+b. $f(x) = \arcsin(x)$ \quad \textit{Hinweis:} $f'(x) = \frac{1}{\sqrt{1-x^2}}$ \\
+c. $f(x) = \sinh(x) = \dfrac{e^x-e^{-x}}{2}$ 
+
+\bigskip \stepcounter{y}
+\textbf{A\arabic {y}:} 
+Bestimme die Taylorreihe für folgende Funktionen um $x_0$. \\
+a. $f(x) = x e^x, x_0 = 1$  \quad
+b. $f(x) =\cosh(x) = \dfrac{e^x+e^{-x}}{2}, x_0 = 0$ 
+ 
+\bigskip 
+
+
+ 
+
+
+
+\end{document}

@@ -12,4 +12,4 @@
 
 -   [A2016](A2016.pdf)
 
--   [Sonstige Aufgaben](Beweise2.pdf)
+-   [Sonstige Aufgaben](Beweise.pdf)
