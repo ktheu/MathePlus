@@ -39,11 +39,56 @@
 Lösungen für Gleichungen oder Ungleichungen können wir auf unterschiedliche Weisen angeben.
 \begin{itemize}
 \item Aufzählen der Lösungen:  $x_1 = 2, x_2 = -3$ \\
-\item Angabe der Lösungsmenge in Mengenschreibeweise: $\mathbb{L} = \{2; -3\}$ \\
+\item Lösungsmenge in Mengenschreibeweise: $\mathbb{L} = \{2; -3\}$ \\
+\item Mengenschreibeweise mit einer charakterisierenden Eigenschaft, z.B:
+ $\mathbb{L} = \{k \mid k \in \mathbb{Z} \land -2 \le k < 5 \}$ \\
+ $\mathbb{L} = \{k \in \mathbb{Z} \mid -2 \le k < 5 \}$ \\
+ $\mathbb{L} = \{2k \mid k \in \mathbb{Z} \}$ \\
 \item Angabe der Lösungsmenge als Intervall:  $\mathbb{L} =(-1, 2]$ 
 
 \end{itemize}
-.
+ 
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+\textbf{Polynomgleichungen}
+
+Eine reelle Polynomgleichung ist eine Gleichung, die man auf die Form $f(x) = 0$ mit
+einem Polynom $f(x) = a_n x^n + a_{n-1} x^{n-1} + . . . + a_1 x + a_0$ mit reellen Koeffzienten
+$a_i \in \mathbb{R}$ für $i = 0, . . . , n$ und $a_n \ne 0$, bringen kann. Dabei heißt $n$ Grad der Gleichung.
+Eine reelle Zahl $x$ heißt Lösung der Gleichung,  wenn $x$ eine Nullstelle des Polynoms $f$ ist, also $f(x) = 0$ gilt.
+
+\footnotesize
+Beispiele:
+
+\quad $\frac{3}{7}x + 5 = \frac{1}{2}$,   \quad $n = 1$,  lineare Gleichung
+
+\quad $x^2 -5x +2 = 0$,   \quad $n = 2$,  quadratische Gleichung
+\end{frame}
+
+%---
+\begin{frame}[fragile]
+ 
+Für quadratische Gleichungen $ax^2+bx+c=0$ gibt es manchmal schnellere Lösungswege als die Anwendung der
+Mitternachtsformel.
+
+1. Falls $c=0$: Ausklammern und Satz vom Nullprodukt anwenden: 
+
+\footnotesize
+Beispiel: $2x^2-3x = 0$. Ausklammern ergibt $x(2x-3)=0$. Mit dem Satz vom Nullprodukt erhalten wir die Lösungen
+$x_1 = 0, x_2 = \frac{3}{2}$
+
+\normalsize
+2. In der \textit{normierten Form (pq-Form)} ist $a=0$.
+
+Satz von Vieta: Hat die Gleichung  $x^2 +px +q =0$ die Lösungen $x_1$ und $x_2$, so gilt:
+$x_1 + x_2 = -p, \quad x_1 \cdot x_2 = q$ 
+
+\footnotesize
+Beispiel: $3x^2+3x-18=0$ bringen wir auf die normierte Form $x^2+x-6=0$. Der Satz von Vieta liefert uns $x_1=-3, x_2 = 2$.
+
+
 \end{frame}
 
 
