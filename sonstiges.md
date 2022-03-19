@@ -13,3 +13,5 @@
 [Blockchain](./kryptographie/blockchain/blockchain.md)
 
 [Sicheres Email mit Gpg4Win](./kryptographie/gpg/gpg.md) -->
+
+[Klausur J2](./klausurj2.pdf)
