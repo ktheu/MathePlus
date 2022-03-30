@@ -9,7 +9,7 @@
 -   [Folgen](./folgen/folien/folgen.handout.pdf) [-](./folgen/folien/folgen.beamer.pdf) [Aufgaben](folgen/aufgaben_folgen.pdf) -
     [Lösungen](folgen/loesungen/loesungen.md) - [Sonstiges](folgen/sonstiges.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIF0X2hILLg4611GpyiPMC2g)
 
--   [Gleichungen](gleichungen/gleichungen_inhalte.pdf) - [Aufgaben](gleichungen/gleichungen_aufgaben.pdf) -
+-   [Gleichungen](gleichungen/gleichungen.md) - [Aufgaben](gleichungen/gleichungen_aufgaben.pdf) -
     [Lösungen](gleichungen/loesungen/loesungen.md)
 
 -   [Komplexe Zahlen](./komplexeZahlen/komplexeZahlen_Inhalte.pdf) - [Aufgaben](./komplexeZahlen/komplexeZahlen.pdf) - [Lösungen](./komplexeZahlen/loesungen.md) -
