@@ -14,4 +14,4 @@
 
 [Sicheres Email mit Gpg4Win](./kryptographie/gpg/gpg.md) -->
 
-[Klausur J2](./klausurj2.pdf)
+[Klausur J1](./loesungen.pdf)
