@@ -10,7 +10,7 @@
     [Lösungen](folgen/loesungen/loesungen.md) - [Sonstiges](folgen/sonstiges.md) - [Videos](https://youtube.com/playlist?list=PLWeMgMhRDsIF0X2hILLg4611GpyiPMC2g)
 
 -   [Gleichungen](gleichungen/gleichungen.md) - [Aufgaben](gleichungen/gleichungen_aufgaben.pdf) -
-    [Lösungen](gleichungen/loesungen/loesungen.md)
+    [Lösungen](gleichungen/loesungen/loesungen.md) - [Code](gleichungen/code.md)
 
 -   [Komplexe Zahlen](./komplexeZahlen/komplexeZahlen_Inhalte.pdf) - [Aufgaben](./komplexeZahlen/komplexeZahlen.pdf) - [Lösungen](./komplexeZahlen/loesungen.md) -
     [Code](https://colab.research.google.com/drive/17om5BwQLL0VnMtpIVHfF6Z_9e8w2t3TK?usp=sharing) -
