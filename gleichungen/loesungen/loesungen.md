@@ -1,8 +1,8 @@
 ### Gleichungen und Ungleichungen - Lösungen
 
--   [A2021](A2021.pdf)
+-   [A2021 - A2016](./loesungen2016_2021.pdf)
 
--   [A2020](A2020.pdf)
+<!-- -   [A2020](A2020.pdf)
 
 -   [A2019](A2019.pdf)
 
@@ -10,7 +10,7 @@
 
 -   [A2017](A2017.pdf)
 
--   [A2016](A2016.pdf)
+-   [A2016](A2016.pdf) -->
 
 -   [A1](A1.pdf)
 
