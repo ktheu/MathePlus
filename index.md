@@ -27,7 +27,7 @@
 -   [Integrationstechniken](./integration/folien/integration.handout.pdf) [-](./integration/folien/integration.beamer.pdf) [Aufgaben](integration/aufgaben/integration_aufgaben.pdf) - [Lösungen A1-A6](./integration/loesungen/integration_loesungen01.pdf) - [A7-A13](integration/loesungen/integration_loesungen02.pdf)
 
 -   [Lineare Algebra](./lineareAlgebra/LineareAlgebra.pdf) - [Aufgaben](./lineareAlgebra/aufgaben/lineareAlgebra.pdf) -
-    [Lösungen](./lineareAlgebra/loesungen/loesungen.md) - [Code](./lineareAlgebra/code.md)
+    [Lösungen](./lineareAlgebra/loesungen/loesungen.md)  
 
 -   [Sonstiges](./sonstiges.md)
 
